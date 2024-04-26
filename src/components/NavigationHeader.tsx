@@ -4,7 +4,7 @@ import { Hamburger } from './Hamburger';
 export function NavigationHeader() {
   return (
     <header className="flex flex-row justify-between items-center py-5 px-4 md:px-12 lg:px-28 md:border-b-[1px] border-gray-100 ">
-      <img src={logo} alt="Brainbase logo" className="w-32 h-fit"></img>
+      <img src={logo} alt="Brainbase logo" className="w-32"></img>
       <nav className="hidden md:block">
         <ul className="flex flex-row gap-8">
           <li className="text-md text-semibold text-gray-400">Home</li>
