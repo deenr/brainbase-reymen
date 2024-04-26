@@ -17,7 +17,7 @@ export default class Hero extends Component {
         </div>
         <div className="flex flex-row flex-1 ">
           <img
-            className="flex-1 h-96 object-cover	object-center"
+            className="flex-1 md:aspect-[4/3] lg:aspect-[5/3] xl:aspect-[7/3] object-cover	object-center"
             src={render}
             alt="Een render van een van mijn projecten in mijn portfolio"
           ></img>
