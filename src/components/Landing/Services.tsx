@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export function Services() {
   return (
     <section className="flex flex-col gap-8 py-12 md:py-24 md:pt-20 bg-gray-100 px-4 md:px-12 lg:px-28">
@@ -10,31 +12,33 @@ export function Services() {
           <p className="text-2xl font-semibold text-gray-900 md:text-3xl">
             Creatief ontwerpen en constructief berekenen gaan hand in hand.
           </p>
-          <button className="flex h-fit bg-primary-500 hover:bg-primary-600 text-white font-bold py-3 px-5 rounded-full items-center text-md text-nowrap font-semibold">
-            Bekijk alle diensten
-            <svg
-              className="w-[20px] h-[20px] ml-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M7.05033 16.9497L16.9498 7.05025M16.9498 7.05025H7.05033M16.9498 7.05025V16.9497"
-              />
-            </svg>
-          </button>
+          <Link to={'diensten'}>
+            <button className="flex h-fit bg-primary-500 hover:bg-primary-600 text-white font-bold py-3 px-5 rounded-full items-center text-md text-nowrap font-semibold">
+              Bekijk alle diensten
+              <svg
+                className="w-[20px] h-[20px] ml-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M7.05033 16.9497L16.9498 7.05025M16.9498 7.05025H7.05033M16.9498 7.05025V16.9497"
+                />
+              </svg>
+            </button>
+          </Link>
         </div>
       </div>
       <div className="block w-full h-[1px] bg-gray-200"></div>
       <div className="flex flex-col md:flex-row gap-8 md:gap-16">
         <div className="flex flex-col">
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl">
+          <h2 className="text-lg font-semibold text-gray-900 md:text-xl">
             Structurele analyse
           </h2>
-          <p className="text-lg text-gray-500 mt-2">
+          <p className="text-base text-gray-500 mt-2">
             Elk ontwerp wordt onder de loep genomen om zekerheid te bieden over
             veiligheid en duurzaamheid, zonder afbreuk te doen aan esthetiek.
           </p>

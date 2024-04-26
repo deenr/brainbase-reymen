@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import { NavigationSidebar } from './NavigationSidebar';
 
@@ -17,9 +18,36 @@ export function NavigationHeader(
         ></img>
         <nav className="hidden md:block">
           <ul className="flex flex-row gap-8">
-            <li className="text-md font-medium text-gray-400">Home</li>
-            <li className="text-md font-medium text-gray-400">Diensten</li>
-            <li className="text-md font-medium text-gray-400">Portfolio</li>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-md font-medium text-gray-600'
+                  : 'text-md font-medium text-gray-400'
+              }
+              to={'/'}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-md font-medium text-gray-600'
+                  : 'text-md font-medium text-gray-400'
+              }
+              to={'diensten'}
+            >
+              Diensten
+            </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-md font-medium text-gray-600'
+                  : 'text-md font-medium text-gray-400'
+              }
+              to={'portfolio'}
+            >
+              Portfolio
+            </NavLink>
             <li className="text-md font-medium text-gray-400">Over ons</li>
           </ul>
         </nav>

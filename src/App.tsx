@@ -1,27 +1,44 @@
-import { useState } from 'react';
-import { Hero } from './components/Landing/Hero';
-import { Projects } from './components/Landing/Projects';
-import { Services } from './components/Landing/Services';
 import { NavigationHeader } from './components/NavigationHeader';
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
+import { Landing } from './pages/Landing';
+import { Services } from './pages/Services';
 import { Footer } from './components/Landing/Footer';
+import { useState } from 'react';
+import { Portfolio } from './pages/Portfolio';
 
-function App() {
-  const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
+const AppLayout = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <div
-      className={navbarOpen ? 'max-h-screen overflow-hidden' : 'overflow-auto'}
-    >
-      <NavigationHeader
-        navbarOpen={navbarOpen}
-        setNavbarOpen={setNavbarOpen}
-      ></NavigationHeader>
-      <Hero></Hero>
-      <Services></Services>
-      <Projects></Projects>
-      <Footer></Footer>
-    </div>
+    <>
+      <NavigationHeader navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
+      <Outlet />
+      <Footer />
+    </>
   );
-}
+};
 
-export default App;
+export const router = createBrowserRouter([
+  {
+    element: <AppLayout />,
+    children: [
+      {
+        path: '/',
+        element: <Landing />,
+        errorElement: <Landing />,
+      },
+      {
+        path: '/diensten',
+        element: <Services />,
+      },
+      {
+        path: '/portfolio',
+        element: <Portfolio />,
+      },
+    ],
+  },
+]);
+
+export function App() {
+  return <RouterProvider router={router} />;
+}

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export function NavigationSidebar(
   props: Readonly<{
     className: string;
@@ -9,9 +11,27 @@ export function NavigationSidebar(
       className={`flex flex-row gap-12 p-6 justify-between rounded-xl shadow-lg ${props.className}`}
     >
       <ul className="flex flex-col gap-6">
-        <li className="text-lg font-medium text-gray-900">Home</li>
-        <li className="text-lg font-medium text-gray-900">Diensten</li>
-        <li className="text-lg font-medium text-gray-900">Portfolio</li>
+        <Link
+          className="text-lg font-medium text-gray-900"
+          to={'/'}
+          onClick={() => props.closeSidebar()}
+        >
+          Home
+        </Link>
+        <Link
+          className="text-lg font-medium text-gray-900"
+          to={'diensten'}
+          onClick={() => props.closeSidebar()}
+        >
+          Diensten
+        </Link>
+        <Link
+          className="text-lg font-medium text-gray-900"
+          to={'portfolio'}
+          onClick={() => props.closeSidebar()}
+        >
+          Portfolio
+        </Link>
         <li className="text-lg font-medium text-gray-900">Over ons</li>
       </ul>
       <svg
