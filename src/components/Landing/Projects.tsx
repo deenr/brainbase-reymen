@@ -17,7 +17,7 @@ export default class Projects extends Component {
           <p className="text-md text-gray-100 text-nowrap">Onze projecten</p>
           <div className="w-full h-[1px] bg-white opacity-20"></div>
           <div className="flex flex-row gap-4">
-            <button className="border-[1px] border-white hover:bg-white text-white hover:text-black font-bold py-3 px-5 rounded-full flex items-center text-md text-semibold">
+            <button className="border-[1px] border-white hover:bg-white text-white hover:text-black font-bold py-3 px-5 rounded-full flex items-center text-md font-semibold	">
               <svg
                 className="w-[20px] h-[20px]"
                 fill="none"
@@ -32,7 +32,7 @@ export default class Projects extends Component {
                 />
               </svg>
             </button>
-            <button className="border-[1px] border-white hover:bg-white text-white hover:text-black font-bold py-3 px-5 rounded-full flex items-center text-md text-semibold">
+            <button className="border-[1px] border-white hover:bg-white text-white hover:text-black font-bold py-3 px-5 rounded-full flex items-center text-md font-semibold	">
               <span className="hidden md:block">Volgende</span>
               <svg
                 className="w-[20px] h-[20px] md:ml-2"
@@ -66,7 +66,7 @@ export default class Projects extends Component {
               </p>
             </div>
             <div className="relative z-10 flex flex-col justify-between items-end">
-              <button className="bg-primary-500 w-fit text-white font-bold py-3 px-3 rounded-full flex items-center text-md text-semibold ">
+              <button className="bg-primary-500 w-fit text-white font-bold py-3 px-3 rounded-full flex items-center text-md font-semibold	 ">
                 <svg
                   className="w-[20px] h-[20px]"
                   fill="none"
@@ -101,7 +101,7 @@ export default class Projects extends Component {
               </p>
             </div>
             <div className="relative z-10 flex flex-col justify-between items-end">
-              <button className="bg-primary-500 w-fit text-white font-bold py-3 px-3 rounded-full flex items-center text-md text-semibold">
+              <button className="bg-primary-500 w-fit text-white font-bold py-3 px-3 rounded-full flex items-center text-md font-semibold	">
                 <svg
                   className="w-[20px] h-[20px]"
                   fill="none"

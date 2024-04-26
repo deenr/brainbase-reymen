@@ -1,35 +1,77 @@
 import logo from '../assets/logo.svg';
-import { Hamburger } from './Hamburger';
+import { NavigationSidebar } from './NavigationSidebar';
 
-export function NavigationHeader() {
+export function NavigationHeader(
+  props: Readonly<{
+    navbarOpen: boolean;
+    setNavbarOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  }>,
+) {
   return (
-    <header className="flex flex-row justify-between items-center py-5 px-4 md:px-12 lg:px-28 md:border-b-[1px] border-gray-100 ">
-      <img src={logo} alt="Brainbase logo" className="w-32"></img>
-      <nav className="hidden md:block">
-        <ul className="flex flex-row gap-8">
-          <li className="text-md text-semibold text-gray-400">Home</li>
-          <li className="text-md text-semibold text-gray-400">Over ons</li>
-          <li className="text-md text-semibold text-gray-400">Projecten</li>
-          <li className="text-md text-semibold text-gray-400">Services</li>
-        </ul>
-      </nav>
-      <button className="hidden md:flex bg-primary-500 hover:bg-primary-600 text-white font-bold py-3 px-5 rounded-full items-center text-md text-semibold">
-        Contacteer ons
-        <svg
-          className="w-[20px] h-[20px] ml-2 hidden lg:block"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
+    <>
+      <header className="flex flex-row gap-4 md:justify-between items-center py-5 px-4 md:px-12 lg:px-28 md:border-b-[1px] border-gray-100 ">
+        <img
+          className="w-32 mr-auto md:mr-0"
+          src={logo}
+          alt="Brainbase logo"
+        ></img>
+        <nav className="hidden md:block">
+          <ul className="flex flex-row gap-8">
+            <li className="text-md font-medium text-gray-400">Home</li>
+            <li className="text-md font-medium text-gray-400">Over ons</li>
+            <li className="text-md font-medium text-gray-400">Projecten</li>
+            <li className="text-md font-medium text-gray-400">Services</li>
+          </ul>
+        </nav>
+        <button className="flex bg-primary-500 hover:bg-primary-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold">
+          Contacteer ons
+          <svg
+            className="w-[20px] h-[20px] ml-2 hidden lg:block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 12h14M12 5l7 7-7 7"
+            ></path>
+          </svg>
+        </button>
+        <button
+          className={'flex flex-col justify-center items-center md:hidden'}
+          onClick={() => props.setNavbarOpen(true)}
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M5 12h14M12 5l7 7-7 7"
-          ></path>
-        </svg>
-      </button>
-      <Hamburger className="md:hidden" open={false}></Hamburger>
-    </header>
+          <span
+            className={
+              'bg-gray-900 block transition-all duration-300 ease-out  h-0.5 w-6 rounded-sm -translate-y-0.5'
+            }
+          ></span>
+          <span
+            className={
+              'bg-gray-900 block transition-all duration-300 ease-out  h-0.5 w-6 rounded-sm my-0.5 opacity-100'
+            }
+          ></span>
+          <span
+            className={
+              'bg-gray-900 block transition-all duration-300 ease-out  h-0.5 w-6 rounded-sm translate-y-0.5'
+            }
+          ></span>
+        </button>
+      </header>
+      {props.navbarOpen && (
+        <div
+          className="absolute inset-0 backdrop-blur-sm bg-gray-500 bg-opacity-60"
+          onClick={() => props.setNavbarOpen(false)}
+        ></div>
+      )}
+      {props.navbarOpen && (
+        <NavigationSidebar
+          className="absolute top-4 right-4 bg-white"
+          closeSidebar={() => props.setNavbarOpen(false)}
+        ></NavigationSidebar>
+      )}
+    </>
   );
 }
