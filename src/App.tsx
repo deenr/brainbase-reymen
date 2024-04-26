@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import Hero from './components/Landing/Hero';
-import Projects from './components/Landing/Projects';
-import Services from './components/Landing/Services';
+import { Hero } from './components/Landing/Hero';
+import { Projects } from './components/Landing/Projects';
+import { Services } from './components/Landing/Services';
 import { NavigationHeader } from './components/NavigationHeader';
-import './index.css';
 import { Footer } from './components/Landing/Footer';
 
 function App() {
