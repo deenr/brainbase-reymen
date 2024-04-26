@@ -104,7 +104,7 @@ export function Portfolio() {
       </header>
       <section className="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 py-12 md:py-24 md:pt-20 px-4 md:px-12 lg:px-28">
         {projects.map((project, index) => (
-          <div key={index} className="w-full h-96 hidden xl:flex">
+          <div key={index} className="w-full h-96">
             <ProjectPreview {...project}></ProjectPreview>
           </div>
         ))}
