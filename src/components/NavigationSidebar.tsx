@@ -10,9 +10,9 @@ export function NavigationSidebar(
     >
       <ul className="flex flex-col gap-6">
         <li className="text-lg font-medium text-gray-900">Home</li>
+        <li className="text-lg font-medium text-gray-900">Diensten</li>
+        <li className="text-lg font-medium text-gray-900">Portfolio</li>
         <li className="text-lg font-medium text-gray-900">Over ons</li>
-        <li className="text-lg font-medium text-gray-900">Projecten</li>
-        <li className="text-lg font-medium text-gray-900">Services</li>
       </ul>
       <svg
         className="w-[24px] h-[24px] mt-[2px] text-gray-500"

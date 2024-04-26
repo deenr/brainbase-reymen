@@ -4,6 +4,7 @@ import Projects from './components/Landing/Projects';
 import Services from './components/Landing/Services';
 import { NavigationHeader } from './components/NavigationHeader';
 import './index.css';
+import { Footer } from './components/Landing/Footer';
 
 function App() {
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
@@ -19,6 +20,7 @@ function App() {
       <Hero></Hero>
       <Services></Services>
       <Projects></Projects>
+      <Footer></Footer>
     </div>
   );
 }

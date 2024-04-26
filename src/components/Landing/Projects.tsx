@@ -3,7 +3,7 @@ import { Component } from 'react';
 export default class Projects extends Component {
   render() {
     return (
-      <section className="relative flex flex-col gap-8 md:gap-12 py-16 px-4 bg-primary-500 md:py-24 md:px-28">
+      <section className="relative flex flex-col gap-8 md:gap-12 py-16 md:py-24 bg-primary-500 px-4 md:px-12 lg:px-28">
         <div className="flex flex-col gap-4 md:gap-16 md:flex-row">
           <h3 className="md:w-[55%] text-2xl font-semibold text-gray-100 md:text-3xl">
             Building tomorrow's landmarks with expert precision

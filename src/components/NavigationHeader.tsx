@@ -9,7 +9,7 @@ export function NavigationHeader(
 ) {
   return (
     <>
-      <header className="flex flex-row gap-4 md:justify-between items-center py-5 px-4 md:px-12 lg:px-28 md:border-b-[1px] border-gray-100 ">
+      <header className="flex flex-row gap-4 md:justify-between items-center py-5 px-4 md:px-12 lg:px-28 border-b-[1px] border-gray-100 ">
         <img
           className="w-32 mr-auto md:mr-0"
           src={logo}
@@ -18,9 +18,9 @@ export function NavigationHeader(
         <nav className="hidden md:block">
           <ul className="flex flex-row gap-8">
             <li className="text-md font-medium text-gray-400">Home</li>
+            <li className="text-md font-medium text-gray-400">Diensten</li>
+            <li className="text-md font-medium text-gray-400">Portfolio</li>
             <li className="text-md font-medium text-gray-400">Over ons</li>
-            <li className="text-md font-medium text-gray-400">Projecten</li>
-            <li className="text-md font-medium text-gray-400">Services</li>
           </ul>
         </nav>
         <button className="flex bg-primary-500 hover:bg-primary-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold">
