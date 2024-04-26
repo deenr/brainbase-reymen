@@ -102,13 +102,13 @@ export function Projects() {
       </div>
       <div className="relative z-10 flex flex-row gap-8 h-96">
         <div className="w-full h-full">
-          <ProjectPreview {...projects[0]}></ProjectPreview>
+          <ProjectPreview key={1} {...projects[0]}></ProjectPreview>
         </div>
         <div className="w-full h-full hidden md:flex">
-          <ProjectPreview {...projects[1]}></ProjectPreview>
+          <ProjectPreview key={2} {...projects[1]}></ProjectPreview>
         </div>
         <div className="w-full h-full hidden xl:flex">
-          <ProjectPreview {...projects[2]}></ProjectPreview>
+          <ProjectPreview key={3} {...projects[2]}></ProjectPreview>
         </div>
       </div>
       <div className="absolute z-0 left-0 bottom-0 right bg-white w-full h-64"></div>

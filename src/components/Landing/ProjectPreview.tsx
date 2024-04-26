@@ -1,9 +1,11 @@
-export function ProjectPreview(props: {
-  imageUrl: string;
-  name: string;
-  completed: string;
-  location: string;
-}) {
+export function ProjectPreview(
+  props: Readonly<{
+    imageUrl: string;
+    name: string;
+    completed: string;
+    location: string;
+  }>,
+) {
   return (
     <picture
       className="relative h-full flex flex-row justify-between flex-1 bg-cover bg-center p-6 cursor-pointer"
@@ -13,7 +15,7 @@ export function ProjectPreview(props: {
     >
       <div className="absolute z-0 opacity-80 inset-0 bg-gradient-to-b from-transparent to-gray-950"></div>
       <div className="relative z-10 flex flex-col justify-end">
-        <h4 className="text-xl text-gray-100">"Opera center"</h4>
+        <h4 className="text-xl text-gray-100">{props.name}</h4>
         <p className="text-md text-gray-100 font-light opacity-90">
           {props.completed}
         </p>
