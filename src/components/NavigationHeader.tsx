@@ -58,22 +58,24 @@ export function NavigationHeader(
             </NavLink>
           </ul>
         </nav>
-        <button className="flex bg-primary-500 hover:bg-primary-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold">
-          Contacteer ons
-          <svg
-            className="w-[20px] h-[20px] ml-2 hidden lg:block"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M5 12h14M12 5l7 7-7 7"
-            ></path>
-          </svg>
-        </button>
+        <Link to={'/contact'}>
+          <button className="flex bg-primary-500 hover:bg-primary-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold">
+            Contacteer ons
+            <svg
+              className="w-[20px] h-[20px] ml-2 hidden lg:block"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M5 12h14M12 5l7 7-7 7"
+              ></path>
+            </svg>
+          </button>
+        </Link>
         <button
           className={'flex flex-col justify-center items-center md:hidden'}
           onClick={() => props.setNavbarOpen(true)}
