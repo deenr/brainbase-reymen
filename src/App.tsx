@@ -5,6 +5,7 @@ import { Services } from './pages/Services';
 import { Footer } from './components/Landing/Footer';
 import { useState } from 'react';
 import { Portfolio } from './pages/Portfolio';
+import { AboutUs } from './pages/AboutUs';
 
 const AppLayout = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
       {
         path: '/portfolio',
         element: <Portfolio />,
+      },
+      {
+        path: '/over-ons',
+        element: <AboutUs />,
       },
     ],
   },

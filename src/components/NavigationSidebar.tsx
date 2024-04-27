@@ -32,7 +32,13 @@ export function NavigationSidebar(
         >
           Portfolio
         </Link>
-        <li className="text-lg font-medium text-gray-900">Over ons</li>
+        <Link
+          className="text-lg font-medium text-gray-900"
+          to={'over-ons'}
+          onClick={() => props.closeSidebar()}
+        >
+          Over ons
+        </Link>
       </ul>
       <svg
         className="w-[24px] h-[24px] mt-[2px] text-gray-500"

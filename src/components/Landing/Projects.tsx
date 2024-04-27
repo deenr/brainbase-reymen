@@ -30,11 +30,11 @@ export function Projects() {
     <section className="relative flex flex-col gap-8 md:gap-12 py-16 md:py-24 bg-primary-500 px-4 md:px-12 lg:px-28">
       <div className="flex flex-col gap-4 md:gap-16 md:flex-row">
         <h3 className="md:w-[55%] text-2xl font-semibold text-gray-100 md:text-3xl">
-          Building tomorrow's landmarks with expert precision
+          Bouwen aan de mijlpalen van morgen met deskundige precisie
         </h3>
         <p className="md:w-[45%] text-md text-gray-100 font-light opacity-90 mt-1">
-          The typos of construction projects cur company spocializes include
-          residential, commercial, industrial, and renovation projects.
+          Het soort bouw projecten waarin wij specialiseren, omvatten
+          particulieren en kleine bouwpromotoren.
         </p>
       </div>
       <div className="flex flex-row justify-between items-center gap-4">

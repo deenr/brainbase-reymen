@@ -52,10 +52,10 @@ export function Services() {
         </div>
         <div className="flex flex-col md:flex-col-reverse gap-6 justify-end	">
           <div className="flex flex-col gap-2">
-            <h2 className="text-xl font-semibold text-gray-900 md:text-2xl">
+            <h2 className="text-lg font-semibold text-gray-900 md:text-xl">
               Ontwerp realisatie
             </h2>
-            <p className="text-lg text-gray-500">
+            <p className="text-base text-gray-500 mt-2">
               Wij vertalen uw dromen in concrete plannen, met voortdurende
               dialoog om te zorgen dat het eindresultaat uw oorspronkelijke
               visie weerspiegelt en zelfs versterkt.

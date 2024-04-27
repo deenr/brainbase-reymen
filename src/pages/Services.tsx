@@ -35,7 +35,7 @@ export function Services() {
           </h1>
           <div className="w-full h-1 bg-primary-500"> </div>
         </div>
-        <p className="max-w-lg text-md text-gray-500">
+        <p className="max-w-xl text-md text-gray-500">
           Stabiliteitsstudies voor woningen en wooncomplexen: efficiënt, veilig
           en duurzaam. Optimalisatie met respect voor ontwerp.
         </p>

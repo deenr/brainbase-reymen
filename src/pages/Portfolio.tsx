@@ -97,7 +97,7 @@ export function Portfolio() {
           </h1>
           <div className="w-full h-1 bg-primary-500"> </div>
         </div>
-        <p className="max-w-lg text-md text-gray-500">
+        <p className="max-w-xl text-md text-gray-500">
           Verken mijn diversiteit aan villa's, huizen en appartementen, elk met
           unieke stabiliteitsstudies.
         </p>

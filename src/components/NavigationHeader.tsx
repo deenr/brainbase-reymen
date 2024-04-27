@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import { NavigationSidebar } from './NavigationSidebar';
 
@@ -11,11 +11,9 @@ export function NavigationHeader(
   return (
     <>
       <header className="flex flex-row gap-4 md:justify-between items-center py-5 px-4 md:px-12 lg:px-28 border-b-[1px] border-gray-100 ">
-        <img
-          className="w-32 mr-auto md:mr-0"
-          src={logo}
-          alt="Brainbase logo"
-        ></img>
+        <Link className="mr-auto md:mr-0" to={'/'}>
+          <img className="w-32" src={logo} alt="Brainbase logo"></img>
+        </Link>
         <nav className="hidden md:block">
           <ul className="flex flex-row gap-8">
             <NavLink
@@ -48,7 +46,16 @@ export function NavigationHeader(
             >
               Portfolio
             </NavLink>
-            <li className="text-md font-medium text-gray-400">Over ons</li>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? 'text-md font-medium text-gray-600'
+                  : 'text-md font-medium text-gray-400'
+              }
+              to={'over-ons'}
+            >
+              Over ons
+            </NavLink>
           </ul>
         </nav>
         <button className="flex bg-primary-500 hover:bg-primary-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold">
