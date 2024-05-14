@@ -10,7 +10,7 @@ export function NavigationSidebar(
     <nav
       className={`flex flex-row gap-12 p-6 justify-between rounded-xl shadow-lg ${props.className}`}
     >
-      <ul className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6">
         <Link
           className="text-lg font-medium text-gray-900"
           to={'/'}
@@ -39,7 +39,7 @@ export function NavigationSidebar(
         >
           Over ons
         </Link>
-      </ul>
+      </div>
       <svg
         className="w-[24px] h-[24px] mt-[2px] text-gray-500"
         viewBox="0 0 24 24"

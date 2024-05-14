@@ -15,7 +15,7 @@ export function NavigationHeader(
           <img className="w-32" src={logo} alt="Brainbase logo"></img>
         </Link>
         <nav className="hidden md:block">
-          <ul className="flex flex-row gap-8">
+          <div className="flex flex-row gap-8">
             <NavLink
               className={({ isActive }) =>
                 isActive
@@ -56,10 +56,13 @@ export function NavigationHeader(
             >
               Over ons
             </NavLink>
-          </ul>
+          </div>
         </nav>
         <Link to={'/contact'}>
-          <button className="flex bg-primair-500 hover:bg-primair-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold">
+          <button
+            aria-label="contacteer ons"
+            className="flex bg-primair-500 hover:bg-primair-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold"
+          >
             Contacteer ons
             <svg
               className="w-[20px] h-[20px] ml-2 hidden lg:block"
@@ -77,6 +80,7 @@ export function NavigationHeader(
           </button>
         </Link>
         <button
+          aria-label="open navigatie balk"
           className={'flex flex-col justify-center items-center md:hidden'}
           onClick={() => props.setNavbarOpen(true)}
         >

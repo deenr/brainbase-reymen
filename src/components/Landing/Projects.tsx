@@ -5,7 +5,7 @@ export function Projects() {
   const [projects, setProjects] = useState([
     {
       imageUrl:
-        'https://static.dezeen.com/uploads/2017/03/tbilisi-music-theatre-concert-hall-fuksas-architecture-tbilisi-georgia_dezeen_hero-c-1704x959.jpg',
+        'https://images.adsttc.com/media/images/5efa/aef8/b357/6595/b800/00d2/newsletter/feature.jpg?1593487089',
       name: 'Opera center',
       completed: 'Completed on August 2020',
       location: 'Old Tbilisi',
@@ -42,6 +42,7 @@ export function Projects() {
         <div className="w-full h-[1px] bg-white opacity-20"></div>
         <div className="flex flex-row gap-4">
           <button
+            aria-label="toon vorig project"
             className="border-[1px] border-white hover:bg-white text-white hover:text-black font-bold py-3 px-5 rounded-full flex items-center text-md font-semibold"
             onClick={() =>
               setProjects((prevProjects) => {
@@ -70,6 +71,7 @@ export function Projects() {
             </svg>
           </button>
           <button
+            aria-label="toon volgend project"
             className="border-[1px] border-white hover:bg-white text-white hover:text-black font-bold py-3 px-5 rounded-full flex items-center text-md font-semibold"
             onClick={() =>
               setProjects((prevProjects) => {

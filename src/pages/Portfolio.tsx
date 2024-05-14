@@ -4,7 +4,7 @@ export function Portfolio() {
   const projects = [
     {
       imageUrl:
-        'https://static.dezeen.com/uploads/2017/03/tbilisi-music-theatre-concert-hall-fuksas-architecture-tbilisi-georgia_dezeen_hero-c-1704x959.jpg',
+        'https://images.adsttc.com/media/images/5efa/aef8/b357/6595/b800/00d2/newsletter/feature.jpg?1593487089',
       name: 'Opera center',
       completed: 'Completed on August 2020',
       location: 'Old Tbilisi',
@@ -39,14 +39,14 @@ export function Portfolio() {
     },
     {
       imageUrl:
-        'https://static.dezeen.com/uploads/2017/03/tbilisi-music-theatre-concert-hall-fuksas-architecture-tbilisi-georgia_dezeen_hero-c-1704x959.jpg',
+        'https://images.adsttc.com/media/images/5efa/aef8/b357/6595/b800/00d2/newsletter/feature.jpg?1593487089',
       name: 'Opera center',
       completed: 'Completed on August 2020',
       location: 'Old Tbilisi',
     },
     {
       imageUrl:
-        'https://static.dezeen.com/uploads/2017/03/tbilisi-music-theatre-concert-hall-fuksas-architecture-tbilisi-georgia_dezeen_hero-c-1704x959.jpg',
+        'https://images.adsttc.com/media/images/5efa/aef8/b357/6595/b800/00d2/newsletter/feature.jpg?1593487089',
       name: 'Opera center',
       completed: 'Completed on August 2020',
       location: 'Old Tbilisi',
@@ -81,7 +81,7 @@ export function Portfolio() {
     },
     {
       imageUrl:
-        'https://static.dezeen.com/uploads/2017/03/tbilisi-music-theatre-concert-hall-fuksas-architecture-tbilisi-georgia_dezeen_hero-c-1704x959.jpg',
+        'https://images.adsttc.com/media/images/5efa/aef8/b357/6595/b800/00d2/newsletter/feature.jpg?1593487089',
       name: 'Opera center',
       completed: 'Completed on August 2020',
       location: 'Old Tbilisi',
