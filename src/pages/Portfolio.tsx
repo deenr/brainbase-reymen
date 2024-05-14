@@ -92,10 +92,10 @@ export function Portfolio() {
     <>
       <header className="flex flex-col md:flex-row gap-5 md:gap-32 justify-between md:items-center bg-gray-100 py-8 md:py-24 px-4 md:px-12 lg:px-28">
         <div className="w-fit flex flex-col gap-4">
-          <h1 className="text-3xl font-semibold text-primary-500 md:text-5xl uppercase">
+          <h1 className="text-3xl font-semibold text-primair-500 md:text-5xl uppercase">
             Portfolio
           </h1>
-          <div className="w-full h-1 bg-primary-500"> </div>
+          <div className="w-full h-1 bg-primair-500"> </div>
         </div>
         <p className="max-w-xl text-md text-gray-500">
           Verken mijn diversiteit aan villa's, huizen en appartementen, elk met

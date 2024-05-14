@@ -21,7 +21,7 @@ export function ProjectPreview(
         </p>
       </div>
       <div className="relative z-10 flex flex-col justify-between items-end">
-        <button className="bg-primary-500 w-fit text-white font-bold py-3 px-3 rounded-full flex items-center text-md font-semibold	 ">
+        <button className="bg-primair-500 w-fit text-white font-bold py-3 px-3 rounded-full flex items-center text-md font-semibold	 ">
           <svg
             className="w-[20px] h-[20px]"
             fill="none"

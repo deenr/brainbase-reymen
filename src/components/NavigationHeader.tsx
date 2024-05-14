@@ -59,7 +59,7 @@ export function NavigationHeader(
           </ul>
         </nav>
         <Link to={'/contact'}>
-          <button className="flex bg-primary-500 hover:bg-primary-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold">
+          <button className="flex bg-primair-500 hover:bg-primair-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold">
             Contacteer ons
             <svg
               className="w-[20px] h-[20px] ml-2 hidden lg:block"

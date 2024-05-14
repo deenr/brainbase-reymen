@@ -4,8 +4,8 @@ export function Services() {
   return (
     <section className="flex flex-col gap-8 py-12 md:py-24 md:pt-20 bg-gray-100 px-4 md:px-12 lg:px-28">
       <div className="flex flex-col gap-2 md:gap-4">
-        <p className="flex flex-row items-center gap-2 text-lg	text-primary-500 font-semibold">
-          <span className="block w-12 h-[2px] bg-primary-500"></span> Onze
+        <p className="flex flex-row items-center gap-2 text-lg	text-primair-500 font-semibold">
+          <span className="block w-12 h-[2px] bg-primair-500"></span> Onze
           diensten
         </p>
         <div className="flex flex-col md:flex-row gap-4 md:gap-8 justify-between items-start md:items-center">
@@ -13,7 +13,7 @@ export function Services() {
             Creatief ontwerpen en constructief berekenen gaan hand in hand.
           </p>
           <Link to={'diensten'}>
-            <button className="flex h-fit bg-primary-500 hover:bg-primary-600 text-white font-bold py-3 px-5 rounded-full items-center text-md text-nowrap font-semibold">
+            <button className="flex h-fit bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 px-5 rounded-full items-center text-md text-nowrap font-semibold">
               Bekijk alle diensten
               <svg
                 className="w-[20px] h-[20px] ml-2"
