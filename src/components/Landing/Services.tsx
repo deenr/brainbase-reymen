@@ -14,10 +14,10 @@ export function Services() {
           </p>
           <Link to={'diensten'}>
             <button
-              aria-label="bekijk alle diensten"
+              aria-label="bekijk diensten"
               className="flex h-fit bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 px-5 rounded-full items-center text-md text-nowrap font-semibold"
             >
-              Bekijk alle diensten
+              Bekijk diensten
               <svg
                 className="w-[20px] h-[20px] ml-2"
                 fill="none"
