@@ -19,14 +19,13 @@ jobs:
       - name: Build
         run: npm run build # The build command of your project
 
-      - name: Pushes test folder
-        uses: datalbry/copy_folder_to_another_repo_action@1.0.0
+      - name: Push changes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_folder: 'dist'
-          destination_repo: 'deenr/brainbase-htmlpublic'
-          user_email: 'deenrayman@outlook.be'
-          destination_branch: 'main'
-          user_name: 'deenr'
-          commit_msg: 'Build: ({sha}) {msg}'
+          source-directory: 'dist'
+          destination-github-username: 'deenr'
+          destination-repository-name: 'brainbase-htmlpublic'
+          user-email: deenrayman@outlook.be
+          target-branch: main
