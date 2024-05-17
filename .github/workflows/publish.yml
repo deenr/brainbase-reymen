@@ -19,11 +19,13 @@ jobs:
       - name: Build
         run: npm run build # The build command of your project
 
-      - name: Push
-        uses: s0/git-publish-subdir-action@develop
+      - name: Push changes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
         env:
-          REPO: self
-          BRANCH: hostinger # The branch name where you want to push the assets
-          FOLDER: ./ # The directory where your assets are generated
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-          MESSAGE: 'Build: ({sha}) {msg}' # The commit message
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'dist'
+          destination-github-username: 'deenr'
+          destination-repository-name: 'brainbase-htmlpublic'
+          user-email: deenrayman@outlook.be
+          target-branch: main
