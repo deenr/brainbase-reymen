@@ -27,5 +27,6 @@ jobs:
           source_folder: 'test_files'
           destination_repo: 'deenr/brainbase-htmlpublic'
           user_email: 'deenrayman@outlook.be'
+          destination_branch: 'main'
           user_name: 'deenr'
           commit_msg: 'Build: ({sha}) {msg}'
