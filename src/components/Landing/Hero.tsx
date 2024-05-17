@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <main className="flex flex-col gap-8 md:gap-16 pt-8 md:pt-24 px-4 md:px-12 lg:px-28">
       <div className="flex flex-col gap-6 justify-center">
-        <h1 className="text-4xl font-semibold text-gray-900 md:text-6xl">
+        <h1 className="text-4xl font-semibold text-primair-900 md:text-6xl">
           Wij realiseren uw bouwdromen <br></br> met solide expertise
         </h1>
         <p className="text-lg	text-gray-500">
