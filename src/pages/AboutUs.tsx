@@ -40,6 +40,7 @@ export function AboutUs() {
                   'url(\'https://rogierbos.com/wp-content/uploads/2019/03/Bouw-Fotograaf-Portret-van-een-werkvoorbereider.jpg\')',
               }}
             ></div>
+            
           </div>
           <div className="flex-1 flex flex-col md:flex-col-reverse gap-6 justify-end	">
             <div className="flex flex-col gap-2">
