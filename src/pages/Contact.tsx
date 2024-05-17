@@ -262,7 +262,7 @@ export function Contact() {
 
                 <button
                   aria-label="verzend contact formulier"
-                  className="w-fit flex bg-primair-500 hover:bg-primair-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold"
+                  className="w-fit flex bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 px-5 rounded-full items-center text-sm md:text-md font-semibold"
                   type="submit"
                 >
                   Verzend
@@ -669,7 +669,7 @@ export function Contact() {
                 />
                 <button
                   aria-label="verzend offerte formulier"
-                  className="w-fit flex bg-primair-500 hover:bg-primair-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold"
+                  className="w-fit flex bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 px-5 rounded-full items-center text-sm md:text-md font-semibold"
                   type="submit"
                 >
                   Verzend
