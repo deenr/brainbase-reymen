@@ -25,7 +25,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source_folder: 'test_files'
-          destination_repo: 'brainbase-htmlpublic'
+          destination_repo: 'deenr/brainbase-htmlpublic'
           user_email: 'deenrayman@outlook.be'
           user_name: 'deenr'
           commit_msg: 'Build: ({sha}) {msg}'
