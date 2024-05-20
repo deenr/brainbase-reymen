@@ -1,4 +1,3 @@
-import render from '../../assets/RENDER-300x200.webp';
 
 export function Hero() {
   return (
@@ -16,7 +15,7 @@ export function Hero() {
       <div className="flex flex-row flex-1 ">
         <img
           className="flex-1 md:aspect-[4/3] lg:aspect-[5/3] xl:aspect-[7/3] object-cover object-center"
-          src={render}
+          src='src/assets/portfolio/LISTOIR/RENDER.webp'
           alt="Een render van een van mijn projecten in mijn portfolio"
         ></img>
       </div>

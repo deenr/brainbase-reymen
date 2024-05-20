@@ -45,6 +45,11 @@ export const router = createBrowserRouter([
         path: '/contact',
         element: <Contact />,
       },
+      {
+        path: '*',
+        element: <Landing />,
+        errorElement: <Landing />,
+      },
     ],
   },
 ]);
