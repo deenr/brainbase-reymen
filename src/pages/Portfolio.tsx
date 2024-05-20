@@ -83,7 +83,7 @@ export function Portfolio() {
         {projects.map((project) => (
           <div key={project.id} className="w-full h-96">
             <ProjectPreview 
-              image={`src/assets/portfolio/${project.id}/RENDER.webp`}
+              image={`assets/portfolio/${project.id}/RENDER.webp`}
               {...project}
             ></ProjectPreview>
           </div>

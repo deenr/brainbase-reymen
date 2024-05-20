@@ -84,13 +84,13 @@ export function Projects() {
       </div>
       <div className="relative z-10 flex flex-row gap-8 h-96">
         <div className="w-full h-full">
-          <ProjectPreview key={1} {...projects[0]} image={`src/assets/portfolio/${projects[0].id}/RENDER.webp`}></ProjectPreview>
+          <ProjectPreview key={1} {...projects[0]} image={`assets/portfolio/${projects[0].id}/RENDER.webp`}></ProjectPreview>
         </div>
         <div className="w-full h-full hidden md:flex">
-          <ProjectPreview key={2} {...projects[1]} image={`src/assets/portfolio/${projects[1].id}/RENDER.webp`}></ProjectPreview>
+          <ProjectPreview key={2} {...projects[1]} image={`assets/portfolio/${projects[1].id}/RENDER.webp`}></ProjectPreview>
         </div>
         <div className="w-full h-full hidden xl:flex">
-          <ProjectPreview key={3} {...projects[2]} image={`src/assets/portfolio/${projects[2].id}/RENDER.webp`}></ProjectPreview>
+          <ProjectPreview key={3} {...projects[2]} image={`assets/portfolio/${projects[2].id}/RENDER.webp`}></ProjectPreview>
         </div>
       </div>
       <div className="absolute z-0 left-0 bottom-0 right bg-white w-full h-64"></div>
