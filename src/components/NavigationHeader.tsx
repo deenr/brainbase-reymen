@@ -19,8 +19,8 @@ export function NavigationHeader(
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? 'text-md font-medium text-gray-600'
-                  : 'text-md font-medium text-gray-400'
+                  ? 'text-md font-semibold uppercase text-gray-600'
+                  : 'text-md font-semibold uppercase text-gray-400'
               }
               to={'/'}
             >
@@ -29,8 +29,8 @@ export function NavigationHeader(
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? 'text-md font-medium text-gray-600'
-                  : 'text-md font-medium text-gray-400'
+                  ? 'text-md font-semibold uppercase text-gray-600'
+                  : 'text-md font-semibold uppercase text-gray-400'
               }
               to={'diensten'}
             >
@@ -39,8 +39,8 @@ export function NavigationHeader(
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? 'text-md font-medium text-gray-600'
-                  : 'text-md font-medium text-gray-400'
+                  ? 'text-md font-semibold uppercase text-gray-600'
+                  : 'text-md font-semibold uppercase text-gray-400'
               }
               to={'portfolio'}
             >
@@ -49,8 +49,8 @@ export function NavigationHeader(
             <NavLink
               className={({ isActive }) =>
                 isActive
-                  ? 'text-md font-medium text-gray-600'
-                  : 'text-md font-medium text-gray-400'
+                  ? 'text-md font-semibold uppercase text-gray-600'
+                  : 'text-md font-semibold uppercase text-gray-400'
               }
               to={'over-ons'}
             >
@@ -61,7 +61,7 @@ export function NavigationHeader(
         <Link to={'/contact'}>
           <button
             aria-label="contacteer ons"
-            className="flex bg-primair-500 hover:bg-primair-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold"
+            className="flex bg-primair-500 hover:bg-primair-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold uppercase"
           >
             Contacteer ons
             <svg

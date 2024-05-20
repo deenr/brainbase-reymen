@@ -85,7 +85,7 @@ export function Projects() {
               })
             }
           >
-            <span className="hidden md:block">Volgende</span>
+            <span className="hidden md:block uppercase">Volgende</span>
             <svg
               className="w-[20px] h-[20px] md:ml-2"
               fill="none"

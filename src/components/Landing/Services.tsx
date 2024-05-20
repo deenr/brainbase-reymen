@@ -4,7 +4,7 @@ export function Services() {
   return (
     <section className="flex flex-col gap-8 py-12 md:py-24 md:pt-20 bg-gray-100 px-4 md:px-12 lg:px-28">
       <div className="flex flex-col gap-2 md:gap-4">
-        <p className="flex flex-row items-center gap-2 text-lg	text-primair-500 font-semibold">
+        <p className="flex flex-row items-center gap-2 text-lg	text-primair-500 font-semibold uppercase">
           <span className="block w-12 h-[2px] bg-primair-500"></span> Onze
           diensten
         </p>
@@ -15,7 +15,7 @@ export function Services() {
           <Link to={'diensten'}>
             <button
               aria-label="bekijk diensten"
-              className="flex h-fit bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 px-5 rounded-full items-center text-md text-nowrap font-semibold"
+              className="flex h-fit bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 px-5 rounded-full items-center text-md text-nowrap font-semibold uppercase"
             >
               Bekijk diensten
               <svg
@@ -38,7 +38,7 @@ export function Services() {
       <div className="block w-full h-[1px] bg-gray-200"></div>
       <div className="flex flex-col md:flex-row gap-8 md:gap-16">
         <div className="flex flex-col">
-          <h2 className="text-lg font-semibold text-gray-900 md:text-xl">
+          <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">
             Structurele analyse
           </h2>
           <p className="text-base text-gray-500 mt-2">
@@ -46,7 +46,7 @@ export function Services() {
             veiligheid en duurzaamheid, zonder afbreuk te doen aan esthetiek.
           </p>
           <div
-            className="h-64 bg-gray-400 mt-6 bg-cover bg-center "
+            className="h-64 bg-gray-400 mt-6 bg-cover bg-center"
             style={{
               backgroundImage:
                 'url(\'https://media.licdn.com/dms/image/C4E12AQHlj0h9lzmoWw/article-cover_image-shrink_720_1280/0/1520080032401?e=2147483647&v=beta&t=DUHcnTR4qNgxJKjp3n2wTCdMlrqk7-JIuYwEeckvRNo\')',
@@ -55,7 +55,7 @@ export function Services() {
         </div>
         <div className="flex flex-col md:flex-col-reverse gap-6 justify-end	">
           <div className="flex flex-col gap-2">
-            <h2 className="text-lg font-semibold text-gray-900 md:text-xl">
+            <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">
               Ontwerp realisatie
             </h2>
             <p className="text-base text-gray-500 mt-2">

@@ -10,7 +10,7 @@ export function AboutUs() {
     <>
       <header className="flex flex-col md:flex-row gap-5 md:gap-32 justify-between md:items-center bg-gray-100 py-8 md:py-24 px-4 md:px-12 lg:px-28">
         <div className="w-fit flex flex-col gap-4">
-          <h1 className="text-3xl font-semibold text-primair-500 md:text-5xl uppercase text-nowrap">
+          <h1 className="text-3xl font-bold text-primair-500 md:text-5xl uppercase text-nowrap">
             Over ons
           </h1>
           <div className="w-full h-1 bg-primair-500"> </div>
@@ -23,7 +23,7 @@ export function AboutUs() {
       <section className="flex flex-col gap-6 py-12 md:py-24 md:pt-20 px-4 md:px-12 lg:px-28">
         <div className="flex flex-col md:flex-row md:flex-row gap-4 md:gap-8 md:gap-16">
           <div className="flex-1 flex flex-col">
-            <h2 className="text-xl font-semibold text-gray-900 md:text-2xl">
+            <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">
               Wie ben ik?
             </h2>
             <p className="text-base text-gray-500 mt-2">
@@ -51,7 +51,7 @@ export function AboutUs() {
                 defaultValue="item-1"
               >
                 <AccordionItem value="item-1">
-                  <AccordionTrigger className="text-lg font-semibold text-gray-900 md:text-xl">
+                  <AccordionTrigger className="text-lg font-semibold text-gray-900 md:text-xl uppercase">
                     Creatieve passie
                   </AccordionTrigger>
                   <AccordionContent className="text-base text-gray-500">
@@ -62,7 +62,7 @@ export function AboutUs() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem className="mt-2" value="item-2">
-                  <AccordionTrigger className="text-lg font-semibold text-gray-900 md:text-xl cursor-pointer">
+                  <AccordionTrigger className="text-lg font-semibold text-gray-900 md:text-xl cursor-pointer uppercase">
                     Professionele missie
                   </AccordionTrigger>
                   <AccordionContent className="text-base text-gray-500">
@@ -73,7 +73,7 @@ export function AboutUs() {
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
-              <h2 className="block md:hidden text-lg font-semibold text-gray-900 md:text-xl ">
+              <h2 className="block md:hidden text-lg font-semibold text-gray-900 md:text-xl uppercase">
                 Creatieve passie
               </h2>
               <p className="block md:hidden text-base text-gray-500 mt-2">
@@ -82,7 +82,7 @@ export function AboutUs() {
                 bracht de praktijk me naar bouwkunde. Hier combineer ik nu
                 artistieke visie met technische uitvoerbaarheid.
               </p>
-              <h2 className="block md:hidden text-lg font-semibold text-gray-900 md:text-xl ">
+              <h2 className="block md:hidden text-lg font-semibold text-gray-900 md:text-xl uppercase">
                 Professionele missie
               </h2>
               <p className="block md:hidden text-base text-gray-500 mt-2">
@@ -103,7 +103,7 @@ export function AboutUs() {
           </div>
         </div>
         <div className="mt-4">
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl">
+          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">
             Onze missie
           </h2>
           <p className="text-base text-gray-500 mt-2">
@@ -115,7 +115,7 @@ export function AboutUs() {
           </p>
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl">
+          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">
             Waarom BRAINbase Reymen?
           </h2>
           <p className="text-base text-gray-500 mt-2">

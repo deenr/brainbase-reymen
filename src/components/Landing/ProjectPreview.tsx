@@ -15,8 +15,8 @@ export function ProjectPreview(
     >
       <div className="absolute z-0 opacity-80 inset-0 bg-gradient-to-b from-transparent to-gray-950"></div>
       <div className="relative z-10 flex flex-col justify-end">
-        <h4 className="text-xl text-gray-100">{props.name}</h4>
-        <p className="text-base text-gray-100 font-light opacity-90">
+        <h4 className="text-xl font-semibold text-gray-100 uppercase">{props.name}</h4>
+        <p className="text-base text-gray-100 font-light opacity-70">
           {props.completed}
         </p>
       </div>

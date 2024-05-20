@@ -138,7 +138,7 @@ export function Contact() {
     <>
       <header className="flex flex-col md:flex-row gap-5 md:gap-32 justify-between md:items-center bg-gray-100 py-8 md:py-24 px-4 md:px-12 lg:px-28">
         <div className="w-fit flex flex-col gap-4">
-          <h1 className="text-3xl font-semibold text-primair-500 md:text-5xl uppercase text-nowrap">
+          <h1 className="text-3xl font-bold text-primair-500 md:text-5xl uppercase text-nowrap">
             Contact
           </h1>
           <div className="w-full h-1 bg-primair-500"> </div>
@@ -151,8 +151,8 @@ export function Contact() {
       <section className="flex flex-col md:flex-row gap-8 py-12 md:py-24 md:pt-20 px-4 md:px-12 lg:px-28">
         <Tabs defaultValue="general" className="w-full">
           <TabsList className="mb-4">
-            <TabsTrigger value="general">Algemene vragen</TabsTrigger>
-            <TabsTrigger value="quotation">Offerte aanvragen</TabsTrigger>
+            <TabsTrigger value="general" className='uppercase'>Algemene vragen</TabsTrigger>
+            <TabsTrigger value="quotation" className='uppercase'>Offerte aanvragen</TabsTrigger>
           </TabsList>
           <TabsContent value="general">
             <Form {...contactForm}>
@@ -166,7 +166,7 @@ export function Contact() {
                     name="voornaam"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel>Voornaam</FormLabel>
+                        <FormLabel className='uppercase'>Voornaam</FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Vul hier je voornaam in"
@@ -182,7 +182,7 @@ export function Contact() {
                     name="achternaam"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel>Achternaam</FormLabel>
+                        <FormLabel className='uppercase'>Achternaam</FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Vul hier je achternaam in"
@@ -199,7 +199,7 @@ export function Contact() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Emailadres</FormLabel>
+                      <FormLabel className='uppercase'>Emailadres</FormLabel>
                       <FormControl>
                         <Input
                           placeholder="Vul hier je emailadres in"
@@ -215,7 +215,7 @@ export function Contact() {
                   name="telefoonnummer"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Telefoonnummer</FormLabel>
+                      <FormLabel className='uppercase'>Telefoonnummer</FormLabel>
                       <FormControl>
                         <Input
                           placeholder="Vul hier je telefoonnummer in"
@@ -231,7 +231,7 @@ export function Contact() {
                   name="onderwerp"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Onderwerp</FormLabel>
+                      <FormLabel className='uppercase'>Onderwerp</FormLabel>
                       <FormControl>
                         <Input
                           placeholder="Vul hier het onderwerp in"
@@ -247,7 +247,7 @@ export function Contact() {
                   name="bericht"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Bericht</FormLabel>
+                      <FormLabel className='uppercase'>Bericht</FormLabel>
                       <FormControl>
                         <Textarea
                           className="resize-none"
@@ -262,7 +262,7 @@ export function Contact() {
 
                 <button
                   aria-label="verzend contact formulier"
-                  className="w-fit flex bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 px-5 rounded-full items-center text-sm md:text-md font-semibold"
+                  className="w-1/3 flex justify-center mt-2 bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 px-5 rounded-full items-center text-sm md:text-md font-semibold uppercase"
                   type="submit"
                 >
                   Verzend
@@ -282,7 +282,7 @@ export function Contact() {
                     name="voornaam"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel>Voornaam</FormLabel>
+                        <FormLabel className='uppercase'>Voornaam</FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Vul hier je voornaam in"
@@ -298,7 +298,7 @@ export function Contact() {
                     name="achternaam"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel>Achternaam</FormLabel>
+                        <FormLabel className='uppercase'>Achternaam</FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Vul hier je achternaam in"
@@ -315,7 +315,7 @@ export function Contact() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Emailadres</FormLabel>
+                      <FormLabel className='uppercase'>Emailadres</FormLabel>
                       <FormControl>
                         <Input
                           placeholder="Vul hier je emailadres in"
@@ -331,7 +331,7 @@ export function Contact() {
                   name="telefoonnummer"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Telefoonnummer</FormLabel>
+                      <FormLabel className='uppercase'>Telefoonnummer</FormLabel>
                       <FormControl>
                         <Input
                           placeholder="Vul hier je telefoonnummer in"
@@ -348,7 +348,7 @@ export function Contact() {
                     name="straat"
                     render={({ field }) => (
                       <FormItem className="lg:w-2/3">
-                        <FormLabel>Straat</FormLabel>
+                        <FormLabel className='uppercase'>Straat</FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Vul hier de straat in"
@@ -364,7 +364,7 @@ export function Contact() {
                     name="huisnummer"
                     render={({ field }) => (
                       <FormItem className="lg:w-1/3">
-                        <FormLabel>Huisnummer</FormLabel>
+                        <FormLabel className='uppercase'>Huisnummer</FormLabel>
                         <FormControl>
                           <Input {...field} placeholder="Huisnummer" />
                         </FormControl>
@@ -379,7 +379,7 @@ export function Contact() {
                     name="postcode"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel>Postcode</FormLabel>
+                        <FormLabel className='uppercase'>Postcode</FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Vul hier de postcode in"
@@ -395,7 +395,7 @@ export function Contact() {
                     name="stad"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel>Stad</FormLabel>
+                        <FormLabel className='uppercase'>Stad</FormLabel>
                         <FormControl>
                           <Input placeholder="Vul hier de stad in" {...field} />
                         </FormControl>
@@ -409,7 +409,7 @@ export function Contact() {
                   name="typeProject"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Type project</FormLabel>
+                      <FormLabel className='uppercase'>Type project</FormLabel>
                       <Select
                         onValueChange={field.onChange}
                         defaultValue={field.value}
@@ -434,7 +434,7 @@ export function Contact() {
                   name="korteBeschrijving"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Korte beschrijving</FormLabel>
+                      <FormLabel className='uppercase'>Korte beschrijving</FormLabel>
                       <FormControl>
                         <Textarea
                           className="resize-none"
@@ -451,7 +451,7 @@ export function Contact() {
                   name="ruimtes"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Ruimtes</FormLabel>
+                      <FormLabel className='uppercase'>Ruimtes</FormLabel>
                       <Select
                         onValueChange={field.onChange}
                         defaultValue={field.value}
@@ -482,7 +482,7 @@ export function Contact() {
                   name="stapelingDraagmuren"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Stapeling draagmuren</FormLabel>
+                      <FormLabel className='uppercase'>Stapeling draagmuren</FormLabel>
                       <Select
                         onValueChange={field.onChange}
                         defaultValue={field.value}
@@ -508,7 +508,7 @@ export function Contact() {
                   name="maximaleUitkraging"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Maximale uitkraging (in meter)</FormLabel>
+                      <FormLabel className='uppercase'>Maximale uitkraging (in meter)</FormLabel>
                       <FormControl className="relative">
                         <Input
                           placeholder="Vul hier de maximale uitkraging in"
@@ -524,7 +524,7 @@ export function Contact() {
                   name="typeFundering"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Type fundering</FormLabel>
+                      <FormLabel className='uppercase'>Type fundering</FormLabel>
                       <Select
                         onValueChange={field.onChange}
                         defaultValue={field.value}
@@ -536,8 +536,8 @@ export function Contact() {
                         </FormControl>
                         <SelectContent>
                           <SelectItem value="betonplaat">Betonplaat</SelectItem>
-                          <SelectItem value="stookfundering">
-                            Stookfundering
+                          <SelectItem value="strookfundering">
+                            Strookfundering
                           </SelectItem>
                           <SelectItem value="dieptefundering">
                             Dieptefundering
@@ -554,7 +554,7 @@ export function Contact() {
                   name="kelder"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>(Kruip-)kelder</FormLabel>
+                      <FormLabel className='uppercase'>(Kruip-)kelder</FormLabel>
                       <Select
                         onValueChange={field.onChange}
                         defaultValue={field.value}
@@ -565,10 +565,9 @@ export function Contact() {
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="aanwezig">Aanwezig</SelectItem>
-                          <SelectItem value="niet_aanwezig">
-                            Niet aanwezig
-                          </SelectItem>
+                          <SelectItem value="kruipkelder">Kruipkelder</SelectItem>
+                          <SelectItem value="kelder">Kelder</SelectItem>
+                          <SelectItem value="n.v.t.">N.v.t.</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -581,7 +580,7 @@ export function Contact() {
                   render={() => (
                     <FormItem>
                       <div className="mb-2">
-                        <FormLabel>Draagvloeren</FormLabel>
+                        <FormLabel className='uppercase'>Draagvloeren</FormLabel>
                       </div>
                       {draagvloeren.map((item) => (
                         <FormField
@@ -628,7 +627,7 @@ export function Contact() {
                   name="typeDak"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>(Kruip-)kelder</FormLabel>
+                      <FormLabel className='uppercase'>Type dak</FormLabel>
                       <Select
                         onValueChange={field.onChange}
                         defaultValue={field.value}
@@ -655,7 +654,7 @@ export function Contact() {
                   name="overigeOpmerkingen"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Overige opmerkingen</FormLabel>
+                      <FormLabel className='uppercase'>Overige opmerkingen</FormLabel>
                       <FormControl>
                         <Textarea
                           className="resize-none"
@@ -669,7 +668,7 @@ export function Contact() {
                 />
                 <button
                   aria-label="verzend offerte formulier"
-                  className="w-fit flex bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 px-5 rounded-full items-center text-sm md:text-md font-semibold"
+                  className="w-1/3 flex justify-center mt-2 bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 px-5 rounded-full items-center text-sm md:text-md font-semibold uppercase"
                   type="submit"
                 >
                   Verzend
