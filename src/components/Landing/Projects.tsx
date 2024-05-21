@@ -1,9 +1,12 @@
 import { useState } from 'react';
-import { ProjectPreview } from './ProjectPreview';
 import portfolio from '../../assets/portfolio.json'
 import { Project } from '@/models/portfolio';
+import { ProjectPreviewMobile } from '../ProjectPreviewMobile';
+import { ProjectPreviewDesktop } from '../ProjectPreviewDesktop';
+import { useBreakpoint } from '@/lib/breakpoints';
 
 export function Projects() {
+  const { isLg } = useBreakpoint('lg')
   const [projects, setProjects] = useState((portfolio as Project[]).splice(0, 5));
 
   return (
@@ -84,13 +87,25 @@ export function Projects() {
       </div>
       <div className="relative z-10 flex flex-row gap-8 h-96">
         <div className="w-full h-full">
-          <ProjectPreview key={1} {...projects[0]} image={`assets/portfolio/${projects[0].id}/RENDER.webp`}></ProjectPreview>
+          {
+            isLg
+            ?<ProjectPreviewDesktop key={1} {...projects[0]} image={`assets/portfolio/${projects[0].id}/RENDER.webp`} />
+            : <ProjectPreviewMobile key={1} {...projects[0]} image={`assets/portfolio/${projects[0].id}/RENDER.webp`} />
+          }
         </div>
         <div className="w-full h-full hidden md:flex">
-          <ProjectPreview key={2} {...projects[1]} image={`assets/portfolio/${projects[1].id}/RENDER.webp`}></ProjectPreview>
+          {
+            isLg
+            ?<ProjectPreviewDesktop key={2} {...projects[1]} image={`assets/portfolio/${projects[1].id}/RENDER.webp`} />
+            : <ProjectPreviewMobile key={2} {...projects[1]} image={`assets/portfolio/${projects[1].id}/RENDER.webp`} />
+          }
         </div>
         <div className="w-full h-full hidden xl:flex">
-          <ProjectPreview key={3} {...projects[2]} image={`assets/portfolio/${projects[2].id}/RENDER.webp`}></ProjectPreview>
+          {
+            isLg
+            ?<ProjectPreviewDesktop key={3} {...projects[2]} image={`assets/portfolio/${projects[2].id}/RENDER.webp`} />
+            : <ProjectPreviewMobile key={3} {...projects[2]} image={`assets/portfolio/${projects[2].id}/RENDER.webp`} />
+          }
         </div>
       </div>
       <div className="absolute z-0 left-0 bottom-0 right bg-white w-full h-64"></div>

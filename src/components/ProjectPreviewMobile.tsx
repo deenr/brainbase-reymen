@@ -1,3 +1,4 @@
+
 import {
   Dialog,
   DialogContent,
@@ -7,18 +8,8 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog'
 
-export function ProjectPreview(
-  {
-    projectNaam,
-    projectOmschrijving,
-    image,
-    bouwheer,
-    architect,
-    aannemer,
-    heeftVoorstudie,
-    heeftUitvoeringsplannen,
-    heeftWerfopvolging
-  }: Readonly<{
+export function ProjectPreviewMobile (
+  props: Readonly<{
     projectNaam: string,
     projectOmschrijving: string,
     image: string,
@@ -30,11 +21,23 @@ export function ProjectPreview(
     heeftWerfopvolging?: boolean
   }>,
 ) {
+  const {
+    projectNaam,
+    projectOmschrijving,
+    image,
+    bouwheer,
+    architect,
+    aannemer,
+    heeftVoorstudie,
+    heeftUitvoeringsplannen,
+    heeftWerfopvolging
+  } = props;
+
   return (
     <Dialog>
       <DialogTrigger asChild>  
         <picture
-          className="relative h-full flex flex-row justify-between flex-1 bg-cover bg-center p-6 cursor-pointer"
+          className='relative h-full flex flex-row justify-between flex-1 bg-cover bg-center p-6'
           style={{
             backgroundImage: `url(${image})`,
           }}
@@ -128,7 +131,7 @@ export function ProjectPreview(
   );
 }
 
-function TitleDescription(
+function TitleDescription (
   {
     title,
     description
