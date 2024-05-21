@@ -45,12 +45,10 @@ export function ProjectPreviewMobile (
           <div className="absolute z-0 opacity-80 inset-0 bg-gradient-to-b from-transparent to-gray-950"></div>
           <div className="relative z-10 flex flex-col justify-end">
             <h4 className="text-xl font-semibold text-gray-100 uppercase">{projectNaam}</h4>
-            <p className="text-base text-gray-100 font-light opacity-70">
-              {architect}
-            </p>
+            <p className="text-base text-gray-100 font-light opacity-70">{projectOmschrijving}</p>
           </div>
           <div className="relative z-10 flex flex-col justify-between items-end">
-            <button
+            <div
               aria-label="open project details"
               className="bg-primair-500 w-fit text-white font-bold py-3 px-3 rounded-full flex items-center text-md font-semibold	 "
             >
@@ -67,10 +65,7 @@ export function ProjectPreviewMobile (
                   d="M7.05033 16.9497L16.9498 7.05025M16.9498 7.05025H7.05033M16.9498 7.05025V16.9497"
                 />
               </svg>
-            </button>
-            <p className="text-base text-gray-200 font-light opacity-90">
-              {bouwheer}
-            </p>
+            </div>
           </div>
         </picture>
       </DialogTrigger>

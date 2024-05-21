@@ -35,8 +35,8 @@ export function ProjectPreviewDesktop (
             <div className="relative z-10 flex flex-col justify-end">
                 <h4 className="text-xl font-semibold text-gray-100 uppercase">{projectNaam}</h4>
                 <p className="text-base text-gray-100 font-light opacity-70">{projectOmschrijving}</p>
-                </div>
-                <div className="relative z-10 flex flex-col justify-between items-end">
+              </div>
+              <div className="relative z-10 flex flex-col justify-between items-end">
                 <div
                     aria-label="open project details"
                     className="bg-primair-500 w-fit text-white py-3 px-3 rounded-full flex items-center text-md"
