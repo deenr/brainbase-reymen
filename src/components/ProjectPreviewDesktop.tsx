@@ -1,5 +1,3 @@
-import MomentingLogo from '../assets/MoMENTING.svg';
-
 export function ProjectPreviewDesktop({
   projectOmschrijving,
   image,
