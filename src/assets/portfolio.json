@@ -1,356 +1,356 @@
 [
- {
-  "id": "KEMPENHOF",
-  "projectNaam": "Kempenhuf",
-  "projectOmschrijving": "Bouwen van 10 appartementen met ondergronde parking",
-  "bouwheer": "Luc Colla",
-  "architect": "D&D architecten",
-  "heeftVoorstudie": true,
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": true
- },
- {
-  "id": "BRUGSTRAAT",
-  "projectNaam": "Brugstraat",
-  "projectOmschrijving": "Bouwen van 12 appartementen met ondergrondse parking",
-  "bouwheer": "Commercia Terra",
-  "architect": "D&D architecten",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": true
- },
- {
-  "id": "LETERWEG",
-  "projectNaam": "Leterweg",
-  "projectOmschrijving": "Bouwen van nieuwbouwwoning",
-  "architect": "Bart Stevens",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": true
- },
- {
-  "id": "LISTOIR",
-  "projectNaam": "Listoir",
-  "projectOmschrijving": "Bouwen van 5 appartementen met ondergrondse parking",
-  "bouwheer": "Concept building",
-  "architect": "D&D architecten",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": true
- },
- {
-  "id": "MIELS",
-  "projectNaam": "MIELS",
-  "projectOmschrijving": "Bouwen van 9 luxe appartementen met ondergrondse parking",
-  "bouwheer": "Glaudis projects",
-  "architect": "Normarchitectuur",
-  "aannemer": "Bouwbedrijf Bloemen",
-  "heeftUitvoeringsplannen": true,
-  "heeftFotos": true
- },
- {
-  "id": "NAAMSEVEST",
-  "projectNaam": "Naamsevest",
-  "projectOmschrijving": "Bouwen van 3 appartementen met kantoor",
-  "bouwheer": "Cleren Dirk",
-  "architect": "Grosemans-Heylen",
-  "aannemer": "Gebroeders Caelen",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": true
- },
- {
-  "id": "OPGLABBEEK",
-  "projectNaam": "Opglabbeek",
-  "projectOmschrijving": "Bouwen van 10 appartementen met ondergrondse parking",
-  "bouwheer": "Lando projectontwikkeling",
-  "architect": "Francis Schellens",
-  "heeftUitvoeringsplannen": true,
-  "heeftFotos": true
- },
- {
-  "id": "SCHANSSTRAAT",
-  "projectNaam": "Schansstraat",
-  "projectOmschrijving": "Bouwen van 2 meergezinscomplexen met ondergrondse parking (21 appartementen)",
-  "bouwheer": "Kantonale Bouwmaatschappij Beringen",
-  "architect": "Fork Architects",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": true
- },
- {
-  "id": "VANDEWEYER",
-  "projectNaam": "Vandeweyer",
-  "projectOmschrijving": "Bouwen van nieuwbouwwoning",
-  "architect": "Elfi Eerdekens",
-  "heeftUitvoeringsplannen": true,
-  "heeftFotos": true
- },
- {
-  "id": "VILLADOUR",
-  "projectNaam": "Villadour",
-  "projectOmschrijving": "Bouwen van 18 luxe appartementen met ondergrondse parking",
-  "bouwheer": "Glaudis projects",
-  "architect": "Normarchitectuur",
-  "aannemer": "Bouwbedrijf Bloemen",
-  "heeftUitvoeringsplannen": true,
-  "heeftFotos": true
- },
- {
-  "id": "CANNUS FIELD",
-  "projectNaam": "Cannus field",
-  "projectOmschrijving": "Bouwen van nieuwbouwvilla",
-  "architect": "GDesign architecten",
-  "aannemer": "Benny Vrijsen",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": true
- },
- {
-  "id": "CHATOU",
-  "projectNaam": "Chatou",
-  "projectOmschrijving": "Bouwen van 5 appartementen",
-  "bouwheer": "Glaudis projects",
-  "architect": "Houben philippe",
-  "aannemer": "Gebroeders Caelen",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": true
- },
- {
-  "id": "DE BRON SCHOOL",
-  "projectNaam": "De bron school",
-  "projectOmschrijving": "Bouwen van school met fietsenstalling en overdekte speelplaats",
-  "architect": "Q-BUS architecten",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": true
- },
- {
-  "id": "HEMELIJN",
-  "projectNaam": "Hemelijn",
-  "projectOmschrijving": "Bouwen van 17 luxe appartementen met ondergrondse parking",
-  "bouwheer": "Glaudis projects",
-  "architect": "Houben philippe",
-  "aannemer": "Gebroeders Caelen",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": true
- },
- {
-  "id": "HENNISSTRAAT",
-  "projectNaam": "Hennisstraat",
-  "projectOmschrijving": "Bouwen van 11 appartementen met ondergrondse parking",
-  "bouwheer": "JDP-bouw",
-  "architect": "D&D architecten",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": true
- },
- {
-  "id": "JBK",
-  "projectNaam": "JBK",
-  "projectOmschrijving": "Bouwen van 9 appartementen met ondergrondse parking",
-  "bouwheer": "JBK",
-  "architect": "BURO B",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": true
- },
- {
-  "id": "COOPMANS",
-  "projectNaam": "Coopmans",
-  "projectOmschrijving": "Bouwen van nieuwbouwvilla met poolhouse",
-  "architect": "Els Vanstapel",
-  "heeftVoorstudie": true,
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": false
- },
- {
-  "id": "DONGHI",
-  "projectNaam": "Donghi",
-  "projectOmschrijving": "Bouwen van nieuwbouwwoning",
-  "architect": "Els Haesaerts",
-  "heeftVoorstudie": true,
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": false
- },
- {
-  "id": "ESDREEF",
-  "projectNaam": "Esdreef",
-  "projectOmschrijving": "Bouwen van nieuwbouwwoning",
-  "architect": "Eiland 7",
-  "heeftVoorstudie": true,
-  "heeftUitvoeringsplannen": true,
-  "heeftFotos": false
- },
- {
-  "id": "FEYTONGS",
-  "projectNaam": "Feytongs",
-  "projectOmschrijving": "Bouwen van nieuwbouwwoning",
-  "architect": "Irma Architecten",
-  "heeftVoorstudie": true,
-  "heeftUitvoeringsplannen": true,
-  "heeftFotos": false
- },
- {
-  "id": "GELEYNS",
-  "projectNaam": "Geleyns",
-  "projectOmschrijving": "Bouwen van nieuwbouwwoning",
-  "architect": "D-TRACT",
-  "heeftVoorstudie": true,
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": false
- },
- {
-  "id": "KAPELSTRAAT",
-  "projectNaam": "Kapelstraat",
-  "projectOmschrijving": "Bouwen van nieuwbouwwoning",
-  "architect": "Eiland 7",
-  "heeftVoorstudie": true,
-  "heeftUitvoeringsplannen": true,
-  "heeftFotos": false
- },
- {
-  "id": "PAUWELYN",
-  "projectNaam": "Pauwelyn",
-  "projectOmschrijving": "Bouwen van nieuwbouwwoning",
-  "architect": "Eiland 7",
-  "heeftVoorstudie": true,
-  "heeftUitvoeringsplannen": true,
-  "heeftFotos": false
- },
- {
-  "id": "BERGENSTRAAT",
-  "projectNaam": "Bergenstraat",
-  "projectOmschrijving": "Bouwen van 2 halfopen nieuwbouwwoningen",
-  "bouwheer": "Cleren Dirk",
-  "architect": "Grosemans-Heylen",
-  "heeftVoorstudie": true,
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": false
- },
- {
-  "id": "KERKHOFS",
-  "projectNaam": "Kerkhofs",
-  "projectOmschrijving": "Bouwen van nieuwbouwvilla",
-  "architect": "Grosemans-Heylen",
-  "aannemer": "Benny Vrijsen",
-  "heeftFotos": false
- },
- {
-  "id": "VERMIJL",
-  "projectNaam": "Vermijl",
-  "projectOmschrijving": "Bouwen van nieuwbouwwoning",
-  "architect": "LINO-ARCHITECTEN",
-  "aannemer": "Benny Vrijsen",
-  "heeftFotos": false
- },
- {
-  "id": "WINTMOLDERS",
-  "projectNaam": "WINTMOLDERS",
-  "projectOmschrijving": "Bouwen van nieuwbouwvilla met kangoeroewoning",
-  "architect": "Grosemans-Heylen",
-  "aannemer": "Benny Vrijsen ",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": false
- },
- {
-  "id": "BEUKENLAAN",
-  "projectNaam": "BEUKENLAAN",
-  "projectOmschrijving": "Bouwen van nieuwbouwwoning",
-  "architect": "Eiland 7",
-  "heeftUitvoeringsplannen": true,
-  "heeftFotos": false
- },
- {
-  "id": "BEULS",
-  "projectNaam": "Beuls",
-  "projectOmschrijving": "Bouwen van nieuwbouwvilla",
-  "architect": "ILB",
-  "heeftUitvoeringsplannen": true,
-  "heeftFotos": false
- },
- {
-  "id": "BEVERPARK",
-  "projectNaam": "Beverpark",
-  "projectOmschrijving": "Bouwen van assistentiewoningen",
-  "bouwheer": "SOM project",
-  "architect": "D&D architecten",
-  "aannemer": "Bouwonderneming Haex",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": false
- },
- {
-  "id": "BEVINGEN",
-  "projectNaam": "Bevingen",
-  "projectOmschrijving": "Bouwen van 9 appartementen met ondergrondse parking",
-  "bouwheer": "MAC",
-  "architect": "Grosemans-Heylen",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": false
- },
- {
-  "id": "BLOMME",
-  "projectNaam": "Blomme",
-  "projectOmschrijving": "Bouwen van nieuwbouwvilla",
-  "architect": "Ines Verhaegen",
-  "heeftUitvoeringsplannen": true,
-  "heeftFotos": false
- },
- {
-  "id": "DUO WONING",
-  "projectNaam": "Duo woning",
-  "projectOmschrijving": "Bouwen van een meergezinswoning met (2 woonheden)",
-  "bouwheer": "MV projecten",
-  "architect": "Eva Dooms",
-  "heeftUitvoeringsplannen": true,
-  "heeftFotos": false
- },
- {
-  "id": "STEENAKKER",
-  "projectNaam": "Steenakker",
-  "projectOmschrijving": "Bouwen van nieuwbouwwoning",
-  "architect": "Gerlinde Thys",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": false
- },
- {
-  "id": "VAN DRIESSCHE",
-  "projectNaam": "Van Driessche",
-  "projectOmschrijving": "Bouwen van nieuwbouwwoning",
-  "architect": "Architectenbureau Burg Vaes",
-  "heeftUitvoeringsplannen": true,
-  "heeftFotos": false
- },
- {
-  "id": "ERMAR",
-  "projectNaam": "Ermar",
-  "projectOmschrijving": "Bouwen van 3 appartementen",
-  "bouwheer": "Ermar",
-  "architect": "Bijnens Kellend architecten",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": false
- },
- {
-  "id": "OPUS 2",
-  "projectNaam": "Opus park",
-  "projectOmschrijving": "Bouwen van 3 appartementsblokken met een gemeenschappelijke ondergrondse kelder (2 kantoren en 34 luxeappartementen)",
-  "bouwheer": "Glaudis projects",
-  "architect": "Houben philippe",
-  "aannemer": "Gebroeders Caelen",
-  "heeftUitvoeringsplannen": true,
-  "heeftWerfopvolging": true,
-  "heeftFotos": true
- }
+  {
+    "id": "KEMPENHOF",
+    "projectNaam": "Kempenhuf",
+    "projectOmschrijving": "Bouwen van 10 appartementen met ondergronde parking",
+    "bouwheer": "Luc Colla",
+    "architect": "D&D architecten",
+    "heeftVoorstudie": true,
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "BRUGSTRAAT",
+    "projectNaam": "Brugstraat",
+    "projectOmschrijving": "Bouwen van 12 appartementen met ondergrondse parking",
+    "bouwheer": "Commercia Terra",
+    "architect": "D&D architecten",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "LETERWEG",
+    "projectNaam": "Leterweg",
+    "projectOmschrijving": "Bouwen van nieuwbouwwoning",
+    "architect": "Bart Stevens",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "LISTOIR",
+    "projectNaam": "Listoir",
+    "projectOmschrijving": "Bouwen van 5 appartementen met ondergrondse parking",
+    "bouwheer": "Concept building",
+    "architect": "D&D architecten",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "MIELS",
+    "projectNaam": "MIELS",
+    "projectOmschrijving": "Bouwen van 9 luxe appartementen met ondergrondse parking",
+    "bouwheer": "Glaudis projects",
+    "architect": "Normarchitectuur",
+    "aannemer": "Bouwbedrijf Bloemen",
+    "heeftUitvoeringsplannen": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "NAAMSEVEST",
+    "projectNaam": "Naamsevest",
+    "projectOmschrijving": "Bouwen van 3 appartementen met kantoor",
+    "bouwheer": "Cleren Dirk",
+    "architect": "Grosemans-Heylen",
+    "aannemer": "Gebroeders Caelen",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "OPGLABBEEK",
+    "projectNaam": "Opglabbeek",
+    "projectOmschrijving": "Bouwen van 10 appartementen met ondergrondse parking",
+    "bouwheer": "Lando projectontwikkeling",
+    "architect": "Francis Schellens",
+    "heeftUitvoeringsplannen": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "SCHANSSTRAAT",
+    "projectNaam": "Schansstraat",
+    "projectOmschrijving": "Bouwen van 2 meergezinscomplexen met ondergrondse parking (21 appartementen)",
+    "bouwheer": "Kantonale Bouwmaatschappij Beringen",
+    "architect": "Fork Architects",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "VANDEWEYER",
+    "projectNaam": "Vandeweyer",
+    "projectOmschrijving": "Bouwen van nieuwbouwwoning",
+    "architect": "Elfi Eerdekens",
+    "heeftUitvoeringsplannen": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "VILLADOUR",
+    "projectNaam": "Villadour",
+    "projectOmschrijving": "Bouwen van 18 luxe appartementen met ondergrondse parking",
+    "bouwheer": "Glaudis projects",
+    "architect": "Normarchitectuur",
+    "aannemer": "Bouwbedrijf Bloemen",
+    "heeftUitvoeringsplannen": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "CANNUS FIELD",
+    "projectNaam": "Cannus field",
+    "projectOmschrijving": "Bouwen van nieuwbouwvilla",
+    "architect": "GDesign architecten",
+    "aannemer": "Benny Vrijsen",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "CHATOU",
+    "projectNaam": "Chatou",
+    "projectOmschrijving": "Bouwen van 5 appartementen",
+    "bouwheer": "Glaudis projects",
+    "architect": "Houben philippe",
+    "aannemer": "Gebroeders Caelen",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "DE BRON SCHOOL",
+    "projectNaam": "De bron school",
+    "projectOmschrijving": "Bouwen van school met fietsenstalling en overdekte speelplaats",
+    "architect": "Q-BUS architecten",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "HEMELIJN",
+    "projectNaam": "Hemelijn",
+    "projectOmschrijving": "Bouwen van 17 luxe appartementen met ondergrondse parking",
+    "bouwheer": "Glaudis projects",
+    "architect": "Houben philippe",
+    "aannemer": "Gebroeders Caelen",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "HENNISSTRAAT",
+    "projectNaam": "Hennisstraat",
+    "projectOmschrijving": "Bouwen van 11 appartementen met ondergrondse parking",
+    "bouwheer": "JDP-bouw",
+    "architect": "D&D architecten",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "JBK",
+    "projectNaam": "JBK",
+    "projectOmschrijving": "Bouwen van 9 appartementen met ondergrondse parking",
+    "bouwheer": "JBK",
+    "architect": "BURO B",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": true
+  },
+  {
+    "id": "COOPMANS",
+    "projectNaam": "Coopmans",
+    "projectOmschrijving": "Bouwen van nieuwbouwvilla met poolhouse",
+    "architect": "Els Vanstapel",
+    "heeftVoorstudie": true,
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "DONGHI",
+    "projectNaam": "Donghi",
+    "projectOmschrijving": "Bouwen van nieuwbouwwoning",
+    "architect": "Els Haesaerts",
+    "heeftVoorstudie": true,
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "ESDREEF",
+    "projectNaam": "Esdreef",
+    "projectOmschrijving": "Bouwen van nieuwbouwwoning",
+    "architect": "Eiland 7",
+    "heeftVoorstudie": true,
+    "heeftUitvoeringsplannen": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "FEYTONGS",
+    "projectNaam": "Feytongs",
+    "projectOmschrijving": "Bouwen van nieuwbouwwoning",
+    "architect": "Irma Architecten",
+    "heeftVoorstudie": true,
+    "heeftUitvoeringsplannen": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "GELEYNS",
+    "projectNaam": "Geleyns",
+    "projectOmschrijving": "Bouwen van nieuwbouwwoning",
+    "architect": "D-TRACT",
+    "heeftVoorstudie": true,
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "KAPELSTRAAT",
+    "projectNaam": "Kapelstraat",
+    "projectOmschrijving": "Bouwen van nieuwbouwwoning",
+    "architect": "Eiland 7",
+    "heeftVoorstudie": true,
+    "heeftUitvoeringsplannen": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "PAUWELYN",
+    "projectNaam": "Pauwelyn",
+    "projectOmschrijving": "Bouwen van nieuwbouwwoning",
+    "architect": "Eiland 7",
+    "heeftVoorstudie": true,
+    "heeftUitvoeringsplannen": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "BERGENSTRAAT",
+    "projectNaam": "Bergenstraat",
+    "projectOmschrijving": "Bouwen van 2 halfopen nieuwbouwwoningen",
+    "bouwheer": "Cleren Dirk",
+    "architect": "Grosemans-Heylen",
+    "heeftVoorstudie": true,
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "KERKHOFS",
+    "projectNaam": "Kerkhofs",
+    "projectOmschrijving": "Bouwen van nieuwbouwvilla",
+    "architect": "Grosemans-Heylen",
+    "aannemer": "Benny Vrijsen",
+    "heeftFotos": false
+  },
+  {
+    "id": "VERMIJL",
+    "projectNaam": "Vermijl",
+    "projectOmschrijving": "Bouwen van nieuwbouwwoning",
+    "architect": "LINO-ARCHITECTEN",
+    "aannemer": "Benny Vrijsen",
+    "heeftFotos": false
+  },
+  {
+    "id": "WINTMOLDERS",
+    "projectNaam": "WINTMOLDERS",
+    "projectOmschrijving": "Bouwen van nieuwbouwvilla met kangoeroewoning",
+    "architect": "Grosemans-Heylen",
+    "aannemer": "Benny Vrijsen ",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "BEUKENLAAN",
+    "projectNaam": "BEUKENLAAN",
+    "projectOmschrijving": "Bouwen van nieuwbouwwoning",
+    "architect": "Eiland 7",
+    "heeftUitvoeringsplannen": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "BEULS",
+    "projectNaam": "Beuls",
+    "projectOmschrijving": "Bouwen van nieuwbouwvilla",
+    "architect": "ILB",
+    "heeftUitvoeringsplannen": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "BEVERPARK",
+    "projectNaam": "Beverpark",
+    "projectOmschrijving": "Bouwen van assistentiewoningen",
+    "bouwheer": "SOM project",
+    "architect": "D&D architecten",
+    "aannemer": "Bouwonderneming Haex",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "BEVINGEN",
+    "projectNaam": "Bevingen",
+    "projectOmschrijving": "Bouwen van 9 appartementen met ondergrondse parking",
+    "bouwheer": "MAC",
+    "architect": "Grosemans-Heylen",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "BLOMME",
+    "projectNaam": "Blomme",
+    "projectOmschrijving": "Bouwen van nieuwbouwvilla",
+    "architect": "Ines Verhaegen",
+    "heeftUitvoeringsplannen": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "DUO WONING",
+    "projectNaam": "Duo woning",
+    "projectOmschrijving": "Bouwen van een meergezinswoning met (2 woonheden)",
+    "bouwheer": "MV projecten",
+    "architect": "Eva Dooms",
+    "heeftUitvoeringsplannen": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "STEENAKKER",
+    "projectNaam": "Steenakker",
+    "projectOmschrijving": "Bouwen van nieuwbouwwoning",
+    "architect": "Gerlinde Thys",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "VAN DRIESSCHE",
+    "projectNaam": "Van Driessche",
+    "projectOmschrijving": "Bouwen van nieuwbouwwoning",
+    "architect": "Architectenbureau Burg Vaes",
+    "heeftUitvoeringsplannen": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "ERMAR",
+    "projectNaam": "Ermar",
+    "projectOmschrijving": "Bouwen van 3 appartementen",
+    "bouwheer": "Ermar",
+    "architect": "Bijnens Kellend architecten",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": false
+  },
+  {
+    "id": "OPUS 2",
+    "projectNaam": "Opus park",
+    "projectOmschrijving": "Bouwen van 3 appartementsblokken met een gemeenschappelijke ondergrondse kelder (2 kantoren en 34 luxeappartementen)",
+    "bouwheer": "Glaudis projects",
+    "architect": "Houben philippe",
+    "aannemer": "Gebroeders Caelen",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftFotos": true
+  }
 ]

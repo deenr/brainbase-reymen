@@ -1,72 +1,59 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { z } from 'zod';
 import render from '../assets/RENDER-300x200.webp';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import {
-  Form,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormControl,
-  FormMessage,
-} from '@/components/ui/form';
+import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from '@/components/ui/form';
 import { Checkbox } from '@/components/ui/checkbox';
 
 export function Contact() {
   const draagvloeren = [
     {
       id: 'welfsels',
-      label: 'Welfsels',
+      label: 'Welfsels'
     },
     {
       id: 'predallen',
-      label: 'Predallen',
+      label: 'Predallen'
     },
     {
       id: 'pottenEnBalken',
-      label: 'Potten en balken',
+      label: 'Potten en balken'
     },
     {
       id: 'traditioneleBetonvloer',
-      label: 'Traditionele betonvloer',
+      label: 'Traditionele betonvloer'
     },
     {
       id: 'hout',
-      label: 'Hout',
+      label: 'Hout'
     },
     {
       id: 'vrijeKeuze',
-      label: 'Vrije keuze',
-    },
+      label: 'Vrije keuze'
+    }
   ] as const;
 
   const ContactSchema = z.object({
     voornaam: z.string({
-      required_error: 'Gelieve uw voornaam in te vullen',
+      required_error: 'Gelieve uw voornaam in te vullen'
     }),
     achternaam: z.string({
-      required_error: 'Gelieve uw achternaam in te vullen',
+      required_error: 'Gelieve uw achternaam in te vullen'
     }),
     email: z.string({ required_error: 'Gelieve uw email in te vullen' }),
     telefoonnummer: z.string({
-      required_error: 'Gelieve uw telefoonnummer in te vullen',
+      required_error: 'Gelieve uw telefoonnummer in te vullen'
     }),
     onderwerp: z.string({
-      required_error: 'Gelieve het onderwerp in te vullen',
+      required_error: 'Gelieve het onderwerp in te vullen'
     }),
     bericht: z.string({
-      required_error: 'Gelieve het bericht in te vullen',
-    }),
+      required_error: 'Gelieve het bericht in te vullen'
+    })
   });
 
   const OfferteSchema = z.object({
@@ -87,7 +74,7 @@ export function Contact() {
     kelder: z.string(),
     draagvloeren: z.array(z.string()),
     typeDak: z.string(),
-    overigeOpmerkingen: z.string(),
+    overigeOpmerkingen: z.string()
   });
 
   const contactForm = useForm<z.infer<typeof ContactSchema>>({
@@ -98,8 +85,8 @@ export function Contact() {
       email: undefined,
       telefoonnummer: undefined,
       onderwerp: undefined,
-      bericht: undefined,
-    },
+      bericht: undefined
+    }
   });
 
   const offerteForm = useForm<z.infer<typeof OfferteSchema>>({
@@ -122,8 +109,8 @@ export function Contact() {
       kelder: undefined,
       draagvloeren: [],
       typeDak: undefined,
-      overigeOpmerkingen: '',
-    },
+      overigeOpmerkingen: ''
+    }
   });
 
   function onContactSubmit(data: z.infer<typeof ContactSchema>) {
@@ -138,40 +125,33 @@ export function Contact() {
     <>
       <header className="flex flex-col md:flex-row gap-5 md:gap-32 justify-between md:items-center bg-gray-100 py-8 md:py-24 px-4 md:px-12 lg:px-28">
         <div className="w-fit flex flex-col gap-4">
-          <h1 className="text-3xl font-bold text-primair-500 md:text-5xl uppercase text-nowrap">
-            Contact
-          </h1>
+          <h1 className="text-3xl font-bold text-primair-500 md:text-5xl uppercase text-nowrap">Contact</h1>
           <div className="w-full h-1 bg-primair-500"> </div>
         </div>
-        <p className="max-w-xl text-md text-gray-500">
-          Heeft u vragen of wilt u meer informatie? Neem contact met ons op via
-          het gepaste formulier.
-        </p>
+        <p className="max-w-xl text-md text-gray-500">Heeft u vragen of wilt u meer informatie? Neem contact met ons op via het gepaste formulier.</p>
       </header>
       <section className="flex flex-col md:flex-row gap-8 py-12 md:py-24 md:pt-20 px-4 md:px-12 lg:px-28">
         <Tabs defaultValue="general" className="w-full">
           <TabsList className="mb-4">
-            <TabsTrigger value="general" className='uppercase'>Algemene vragen</TabsTrigger>
-            <TabsTrigger value="quotation" className='uppercase'>Offerte aanvragen</TabsTrigger>
+            <TabsTrigger value="general" className="uppercase">
+              Algemene vragen
+            </TabsTrigger>
+            <TabsTrigger value="quotation" className="uppercase">
+              Offerte aanvragen
+            </TabsTrigger>
           </TabsList>
           <TabsContent value="general">
             <Form {...contactForm}>
-              <form
-                onSubmit={contactForm.handleSubmit(onContactSubmit)}
-                className="w-full max-w-md xl:max-w-full flex flex-col gap-4"
-              >
+              <form onSubmit={contactForm.handleSubmit(onContactSubmit)} className="w-full max-w-md xl:max-w-full flex flex-col gap-4">
                 <div className="flex flex-col lg:flex-row gap-4">
                   <FormField
                     control={contactForm.control}
                     name="voornaam"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel className='uppercase'>Voornaam</FormLabel>
+                        <FormLabel className="uppercase">Voornaam</FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Vul hier je voornaam in"
-                            {...field}
-                          />
+                          <Input placeholder="Vul hier je voornaam in" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -182,12 +162,9 @@ export function Contact() {
                     name="achternaam"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel className='uppercase'>Achternaam</FormLabel>
+                        <FormLabel className="uppercase">Achternaam</FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Vul hier je achternaam in"
-                            {...field}
-                          />
+                          <Input placeholder="Vul hier je achternaam in" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -199,12 +176,9 @@ export function Contact() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>Emailadres</FormLabel>
+                      <FormLabel className="uppercase">Emailadres</FormLabel>
                       <FormControl>
-                        <Input
-                          placeholder="Vul hier je emailadres in"
-                          {...field}
-                        />
+                        <Input placeholder="Vul hier je emailadres in" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -215,12 +189,9 @@ export function Contact() {
                   name="telefoonnummer"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>Telefoonnummer</FormLabel>
+                      <FormLabel className="uppercase">Telefoonnummer</FormLabel>
                       <FormControl>
-                        <Input
-                          placeholder="Vul hier je telefoonnummer in"
-                          {...field}
-                        />
+                        <Input placeholder="Vul hier je telefoonnummer in" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -231,12 +202,9 @@ export function Contact() {
                   name="onderwerp"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>Onderwerp</FormLabel>
+                      <FormLabel className="uppercase">Onderwerp</FormLabel>
                       <FormControl>
-                        <Input
-                          placeholder="Vul hier het onderwerp in"
-                          {...field}
-                        />
+                        <Input placeholder="Vul hier het onderwerp in" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -247,13 +215,9 @@ export function Contact() {
                   name="bericht"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>Bericht</FormLabel>
+                      <FormLabel className="uppercase">Bericht</FormLabel>
                       <FormControl>
-                        <Textarea
-                          className="resize-none"
-                          placeholder="Vul hier je bericht in"
-                          {...field}
-                        />
+                        <Textarea className="resize-none" placeholder="Vul hier je bericht in" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -272,22 +236,16 @@ export function Contact() {
           </TabsContent>
           <TabsContent value="quotation" className="flex flex-col gap-4">
             <Form {...offerteForm}>
-              <form
-                onSubmit={offerteForm.handleSubmit(onOfferteSubmit)}
-                className="w-full max-w-md xl:max-w-full flex flex-col gap-4"
-              >
+              <form onSubmit={offerteForm.handleSubmit(onOfferteSubmit)} className="w-full max-w-md xl:max-w-full flex flex-col gap-4">
                 <div className="flex flex-col lg:flex-row gap-4">
                   <FormField
                     control={offerteForm.control}
                     name="voornaam"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel className='uppercase'>Voornaam</FormLabel>
+                        <FormLabel className="uppercase">Voornaam</FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Vul hier je voornaam in"
-                            {...field}
-                          />
+                          <Input placeholder="Vul hier je voornaam in" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -298,12 +256,9 @@ export function Contact() {
                     name="achternaam"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel className='uppercase'>Achternaam</FormLabel>
+                        <FormLabel className="uppercase">Achternaam</FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Vul hier je achternaam in"
-                            {...field}
-                          />
+                          <Input placeholder="Vul hier je achternaam in" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -315,12 +270,9 @@ export function Contact() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>Emailadres</FormLabel>
+                      <FormLabel className="uppercase">Emailadres</FormLabel>
                       <FormControl>
-                        <Input
-                          placeholder="Vul hier je emailadres in"
-                          {...field}
-                        />
+                        <Input placeholder="Vul hier je emailadres in" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -331,12 +283,9 @@ export function Contact() {
                   name="telefoonnummer"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>Telefoonnummer</FormLabel>
+                      <FormLabel className="uppercase">Telefoonnummer</FormLabel>
                       <FormControl>
-                        <Input
-                          placeholder="Vul hier je telefoonnummer in"
-                          {...field}
-                        />
+                        <Input placeholder="Vul hier je telefoonnummer in" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -348,12 +297,9 @@ export function Contact() {
                     name="straat"
                     render={({ field }) => (
                       <FormItem className="lg:w-2/3">
-                        <FormLabel className='uppercase'>Straat</FormLabel>
+                        <FormLabel className="uppercase">Straat</FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Vul hier de straat in"
-                            {...field}
-                          />
+                          <Input placeholder="Vul hier de straat in" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -364,7 +310,7 @@ export function Contact() {
                     name="huisnummer"
                     render={({ field }) => (
                       <FormItem className="lg:w-1/3">
-                        <FormLabel className='uppercase'>Huisnummer</FormLabel>
+                        <FormLabel className="uppercase">Huisnummer</FormLabel>
                         <FormControl>
                           <Input {...field} placeholder="Huisnummer" />
                         </FormControl>
@@ -379,12 +325,9 @@ export function Contact() {
                     name="postcode"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel className='uppercase'>Postcode</FormLabel>
+                        <FormLabel className="uppercase">Postcode</FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Vul hier de postcode in"
-                            {...field}
-                          />
+                          <Input placeholder="Vul hier de postcode in" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -395,7 +338,7 @@ export function Contact() {
                     name="stad"
                     render={({ field }) => (
                       <FormItem className="w-full">
-                        <FormLabel className='uppercase'>Stad</FormLabel>
+                        <FormLabel className="uppercase">Stad</FormLabel>
                         <FormControl>
                           <Input placeholder="Vul hier de stad in" {...field} />
                         </FormControl>
@@ -409,11 +352,8 @@ export function Contact() {
                   name="typeProject"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>Type project</FormLabel>
-                      <Select
-                        onValueChange={field.onChange}
-                        defaultValue={field.value}
-                      >
+                      <FormLabel className="uppercase">Type project</FormLabel>
+                      <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="Selecteer het type project" />
@@ -434,13 +374,9 @@ export function Contact() {
                   name="korteBeschrijving"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>Korte beschrijving</FormLabel>
+                      <FormLabel className="uppercase">Korte beschrijving</FormLabel>
                       <FormControl>
-                        <Textarea
-                          className="resize-none"
-                          placeholder="Vul hier een korte beschrijving van het project in"
-                          {...field}
-                        />
+                        <Textarea className="resize-none" placeholder="Vul hier een korte beschrijving van het project in" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -451,26 +387,17 @@ export function Contact() {
                   name="ruimtes"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>Ruimtes</FormLabel>
-                      <Select
-                        onValueChange={field.onChange}
-                        defaultValue={field.value}
-                      >
+                      <FormLabel className="uppercase">Ruimtes</FormLabel>
+                      <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="Selecteer het type ruimtes" />
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="grote">
-                            Grote open ruimtes (weinig draagmuren)
-                          </SelectItem>
-                          <SelectItem value="gebalanceerd">
-                            Gebalanceerd
-                          </SelectItem>
-                          <SelectItem value="kleine">
-                            Kleine open ruimtes (veel draagmuren)
-                          </SelectItem>
+                          <SelectItem value="grote">Grote open ruimtes (weinig draagmuren)</SelectItem>
+                          <SelectItem value="gebalanceerd">Gebalanceerd</SelectItem>
+                          <SelectItem value="kleine">Kleine open ruimtes (veel draagmuren)</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -482,11 +409,8 @@ export function Contact() {
                   name="stapelingDraagmuren"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>Stapeling draagmuren</FormLabel>
-                      <Select
-                        onValueChange={field.onChange}
-                        defaultValue={field.value}
-                      >
+                      <FormLabel className="uppercase">Stapeling draagmuren</FormLabel>
+                      <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="Selecteer de stapeling van de draagmuren" />
@@ -494,9 +418,7 @@ export function Contact() {
                         </FormControl>
                         <SelectContent>
                           <SelectItem value="boveneen">Boveneen</SelectItem>
-                          <SelectItem value="willekeurig">
-                            Willekeurig
-                          </SelectItem>
+                          <SelectItem value="willekeurig">Willekeurig</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -508,12 +430,9 @@ export function Contact() {
                   name="maximaleUitkraging"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>Maximale uitkraging (in meter)</FormLabel>
+                      <FormLabel className="uppercase">Maximale uitkraging (in meter)</FormLabel>
                       <FormControl className="relative">
-                        <Input
-                          placeholder="Vul hier de maximale uitkraging in"
-                          {...field}
-                        />
+                        <Input placeholder="Vul hier de maximale uitkraging in" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -524,11 +443,8 @@ export function Contact() {
                   name="typeFundering"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>Type fundering</FormLabel>
-                      <Select
-                        onValueChange={field.onChange}
-                        defaultValue={field.value}
-                      >
+                      <FormLabel className="uppercase">Type fundering</FormLabel>
+                      <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="Selecteer het type fundering" />
@@ -536,12 +452,8 @@ export function Contact() {
                         </FormControl>
                         <SelectContent>
                           <SelectItem value="betonplaat">Betonplaat</SelectItem>
-                          <SelectItem value="strookfundering">
-                            Strookfundering
-                          </SelectItem>
-                          <SelectItem value="dieptefundering">
-                            Dieptefundering
-                          </SelectItem>
+                          <SelectItem value="strookfundering">Strookfundering</SelectItem>
+                          <SelectItem value="dieptefundering">Dieptefundering</SelectItem>
                           <SelectItem value="ongekend">Ongekend</SelectItem>
                         </SelectContent>
                       </Select>
@@ -554,11 +466,8 @@ export function Contact() {
                   name="kelder"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>(Kruip-)kelder</FormLabel>
-                      <Select
-                        onValueChange={field.onChange}
-                        defaultValue={field.value}
-                      >
+                      <FormLabel className="uppercase">(Kruip-)kelder</FormLabel>
+                      <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="Selecteer de aanwezigheid van een (kruip-)kelder" />
@@ -580,7 +489,7 @@ export function Contact() {
                   render={() => (
                     <FormItem>
                       <div className="mb-2">
-                        <FormLabel className='uppercase'>Draagvloeren</FormLabel>
+                        <FormLabel className="uppercase">Draagvloeren</FormLabel>
                       </div>
                       {draagvloeren.map((item) => (
                         <FormField
@@ -589,30 +498,16 @@ export function Contact() {
                           name="draagvloeren"
                           render={({ field }) => {
                             return (
-                              <FormItem
-                                key={item.id}
-                                className="flex flex-row items-start space-x-3 space-y-0"
-                              >
+                              <FormItem key={item.id} className="flex flex-row items-start space-x-3 space-y-0">
                                 <FormControl>
                                   <Checkbox
                                     checked={field.value?.includes(item.id)}
                                     onCheckedChange={(checked) => {
-                                      return checked
-                                        ? field.onChange([
-                                            ...field.value,
-                                            item.id,
-                                          ])
-                                        : field.onChange(
-                                            field.value?.filter(
-                                              (value) => value !== item.id,
-                                            ),
-                                          );
+                                      return checked ? field.onChange([...field.value, item.id]) : field.onChange(field.value?.filter((value) => value !== item.id));
                                     }}
                                   />
                                 </FormControl>
-                                <FormLabel className="font-normal">
-                                  {item.label}
-                                </FormLabel>
+                                <FormLabel className="font-normal">{item.label}</FormLabel>
                               </FormItem>
                             );
                           }}
@@ -627,11 +522,8 @@ export function Contact() {
                   name="typeDak"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>Type dak</FormLabel>
-                      <Select
-                        onValueChange={field.onChange}
-                        defaultValue={field.value}
-                      >
+                      <FormLabel className="uppercase">Type dak</FormLabel>
+                      <Select onValueChange={field.onChange} defaultValue={field.value}>
                         <FormControl>
                           <SelectTrigger>
                             <SelectValue placeholder="Selecteer het type dak" />
@@ -640,9 +532,7 @@ export function Contact() {
                         <SelectContent>
                           <SelectItem value="plat">Plat dak</SelectItem>
                           <SelectItem value="hellend">Hellend dak</SelectItem>
-                          <SelectItem value="niet_inbegrepen">
-                            Dak niet inbegrepen in de studie
-                          </SelectItem>
+                          <SelectItem value="niet_inbegrepen">Dak niet inbegrepen in de studie</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -654,13 +544,9 @@ export function Contact() {
                   name="overigeOpmerkingen"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className='uppercase'>Overige opmerkingen</FormLabel>
+                      <FormLabel className="uppercase">Overige opmerkingen</FormLabel>
                       <FormControl>
-                        <Textarea
-                          className="resize-none"
-                          placeholder="Vul hier uw overige opmerkingen in"
-                          {...field}
-                        />
+                        <Textarea className="resize-none" placeholder="Vul hier uw overige opmerkingen in" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -678,11 +564,7 @@ export function Contact() {
           </TabsContent>
         </Tabs>
         <div className="w-full hidden xl:block">
-          <img
-            className="flex-1 object-cover object-center"
-            src={render}
-            alt="Een render van een van mijn projecten in mijn portfolio"
-          ></img>
+          <img className="flex-1 object-cover object-center" src={render} alt="Een render van een van mijn projecten in mijn portfolio"></img>
         </div>
       </section>
     </>

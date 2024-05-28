@@ -1,0 +1,16 @@
+# App resources
+/App_Resources
+
+# compiled output
+package.json
+package-lock.json
+/dist
+/platforms
+/coverage
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+/.vscode

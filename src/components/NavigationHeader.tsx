@@ -6,7 +6,7 @@ export function NavigationHeader(
   props: Readonly<{
     navbarOpen: boolean;
     setNavbarOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  }>,
+  }>
 ) {
   return (
     <>
@@ -16,44 +16,16 @@ export function NavigationHeader(
         </Link>
         <nav className="hidden md:block">
           <div className="flex flex-row gap-8">
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? 'text-md font-semibold uppercase text-gray-600'
-                  : 'text-md font-semibold uppercase text-gray-400'
-              }
-              to={'/'}
-            >
+            <NavLink className={({ isActive }) => (isActive ? 'text-md font-semibold uppercase text-gray-600' : 'text-md font-semibold uppercase text-gray-400')} to={'/'}>
               Home
             </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? 'text-md font-semibold uppercase text-gray-600'
-                  : 'text-md font-semibold uppercase text-gray-400'
-              }
-              to={'diensten'}
-            >
+            <NavLink className={({ isActive }) => (isActive ? 'text-md font-semibold uppercase text-gray-600' : 'text-md font-semibold uppercase text-gray-400')} to={'diensten'}>
               Diensten
             </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? 'text-md font-semibold uppercase text-gray-600'
-                  : 'text-md font-semibold uppercase text-gray-400'
-              }
-              to={'portfolio'}
-            >
+            <NavLink className={({ isActive }) => (isActive ? 'text-md font-semibold uppercase text-gray-600' : 'text-md font-semibold uppercase text-gray-400')} to={'portfolio'}>
               Portfolio
             </NavLink>
-            <NavLink
-              className={({ isActive }) =>
-                isActive
-                  ? 'text-md font-semibold uppercase text-gray-600'
-                  : 'text-md font-semibold uppercase text-gray-400'
-              }
-              to={'over-ons'}
-            >
+            <NavLink className={({ isActive }) => (isActive ? 'text-md font-semibold uppercase text-gray-600' : 'text-md font-semibold uppercase text-gray-400')} to={'over-ons'}>
               Over ons
             </NavLink>
           </div>
@@ -64,55 +36,19 @@ export function NavigationHeader(
             className="flex bg-primair-500 hover:bg-primair-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold uppercase"
           >
             Contacteer ons
-            <svg
-              className="w-[20px] h-[20px] ml-2 hidden lg:block"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 12h14M12 5l7 7-7 7"
-              ></path>
+            <svg className="w-[20px] h-[20px] ml-2 hidden lg:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </button>
         </Link>
-        <button
-          aria-label="open navigatie balk"
-          className={'flex flex-col justify-center items-center md:hidden'}
-          onClick={() => props.setNavbarOpen(true)}
-        >
-          <span
-            className={
-              'bg-gray-900 block transition-all duration-300 ease-out  h-0.5 w-6 rounded-sm -translate-y-0.5'
-            }
-          ></span>
-          <span
-            className={
-              'bg-gray-900 block transition-all duration-300 ease-out  h-0.5 w-6 rounded-sm my-0.5 opacity-100'
-            }
-          ></span>
-          <span
-            className={
-              'bg-gray-900 block transition-all duration-300 ease-out  h-0.5 w-6 rounded-sm translate-y-0.5'
-            }
-          ></span>
+        <button aria-label="open navigatie balk" className={'flex flex-col justify-center items-center md:hidden'} onClick={() => props.setNavbarOpen(true)}>
+          <span className={'bg-gray-900 block transition-all duration-300 ease-out  h-0.5 w-6 rounded-sm -translate-y-0.5'}></span>
+          <span className={'bg-gray-900 block transition-all duration-300 ease-out  h-0.5 w-6 rounded-sm my-0.5 opacity-100'}></span>
+          <span className={'bg-gray-900 block transition-all duration-300 ease-out  h-0.5 w-6 rounded-sm translate-y-0.5'}></span>
         </button>
       </header>
-      {props.navbarOpen && (
-        <div
-          className="absolute inset-0 backdrop-blur-sm bg-gray-500 bg-opacity-60"
-          onClick={() => props.setNavbarOpen(false)}
-        ></div>
-      )}
-      {props.navbarOpen && (
-        <NavigationSidebar
-          className="absolute top-4 right-4 bg-white"
-          closeSidebar={() => props.setNavbarOpen(false)}
-        ></NavigationSidebar>
-      )}
+      {props.navbarOpen && <div className="absolute inset-0 backdrop-blur-sm bg-gray-500 bg-opacity-60" onClick={() => props.setNavbarOpen(false)}></div>}
+      {props.navbarOpen && <NavigationSidebar className="absolute top-4 right-4 bg-white" closeSidebar={() => props.setNavbarOpen(false)}></NavigationSidebar>}
     </>
   );
 }
