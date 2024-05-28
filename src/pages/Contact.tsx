@@ -8,6 +8,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from '@/components/ui/form';
 import { Checkbox } from '@/components/ui/checkbox';
+import background from '../assets/contact.webp';
 
 export function Contact() {
   const draagvloeren = [
@@ -123,12 +124,13 @@ export function Contact() {
 
   return (
     <>
-      <header className="flex flex-col md:flex-row gap-5 md:gap-32 justify-between md:items-center bg-gray-100 py-8 md:py-24 px-4 md:px-12 lg:px-28">
-        <div className="w-fit flex flex-col gap-4">
+      <header className="relative flex flex-col md:flex-row gap-5 md:gap-32 justify-between md:items-center bg-gray-100 py-8 md:py-24 px-4 md:px-12 lg:px-28">
+        <img className="absolute z-0 opacity-30	inset-0 w-full h-full object-cover grayscale" src={background} alt="Over ons achtergrond" />
+        <div className="relative z-10 w-fit flex flex-col gap-4">
           <h1 className="text-3xl font-bold text-primair-500 md:text-5xl uppercase text-nowrap">Contact</h1>
           <div className="w-full h-1 bg-primair-500"> </div>
         </div>
-        <p className="max-w-xl text-md text-gray-500">Heeft u vragen of wilt u meer informatie? Neem contact met ons op via het gepaste formulier.</p>
+        <p className="relative z-10 max-w-xl text-md text-gray-500">Heeft u vragen of wilt u meer informatie? Neem contact met ons op via het gepaste formulier.</p>
       </header>
       <section className="flex flex-col md:flex-row gap-8 py-12 md:py-24 md:pt-20 px-4 md:px-12 lg:px-28">
         <Tabs defaultValue="general" className="w-full">

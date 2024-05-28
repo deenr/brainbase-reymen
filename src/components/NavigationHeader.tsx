@@ -47,7 +47,7 @@ export function NavigationHeader(
           <span className={'bg-gray-900 block transition-all duration-300 ease-out  h-0.5 w-6 rounded-sm translate-y-0.5'}></span>
         </button>
       </header>
-      {props.navbarOpen && <div className="absolute inset-0 backdrop-blur-sm bg-gray-500 bg-opacity-60" onClick={() => props.setNavbarOpen(false)}></div>}
+      {props.navbarOpen && <div className="absolute z-40 inset-0 backdrop-blur-sm bg-gray-500 bg-opacity-60" onClick={() => props.setNavbarOpen(false)}></div>}
       {props.navbarOpen && <NavigationSidebar className="absolute top-4 right-4 bg-white" closeSidebar={() => props.setNavbarOpen(false)}></NavigationSidebar>}
     </>
   );

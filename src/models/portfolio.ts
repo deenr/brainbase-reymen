@@ -7,5 +7,5 @@ export interface Project {
   heeftVoorstudie?: boolean;
   heeftUitvoeringsplannen?: boolean;
   heeftWerfopvolging?: boolean;
-  heeftFotos: boolean;
+  heeftRender: boolean;
 }

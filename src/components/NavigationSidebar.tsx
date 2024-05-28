@@ -7,7 +7,7 @@ export function NavigationSidebar(
   }>
 ) {
   return (
-    <nav className={`flex flex-row gap-12 p-6 justify-between rounded-xl shadow-lg ${props.className}`}>
+    <nav className={`z-50 flex flex-row gap-12 p-6 justify-between rounded-xl shadow-lg ${props.className}`}>
       <div className="flex flex-col gap-6">
         <NavLink
           className={({ isActive }) => (isActive ? 'text-lg font-semibold uppercase text-gray-600' : 'text-lg font-semibold uppercase text-gray-400')}

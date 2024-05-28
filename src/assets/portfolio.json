@@ -8,7 +8,7 @@
     "heeftVoorstudie": true,
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
     "id": "BRUGSTRAAT",
@@ -18,7 +18,7 @@
     "architect": "D&D architecten",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
     "id": "LETERWEG",
@@ -27,7 +27,7 @@
     "architect": "Bart Stevens",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
     "id": "LISTOIR",
@@ -37,7 +37,7 @@
     "architect": "D&D architecten",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
     "id": "MIELS",
@@ -47,7 +47,7 @@
     "architect": "Normarchitectuur",
     "aannemer": "Bouwbedrijf Bloemen",
     "heeftUitvoeringsplannen": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
     "id": "NAAMSEVEST",
@@ -58,7 +58,7 @@
     "aannemer": "Gebroeders Caelen",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
     "id": "OPGLABBEEK",
@@ -67,7 +67,7 @@
     "bouwheer": "Lando projectontwikkeling",
     "architect": "Francis Schellens",
     "heeftUitvoeringsplannen": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
     "id": "SCHANSSTRAAT",
@@ -77,7 +77,7 @@
     "architect": "Fork Architects",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
     "id": "VANDEWEYER",
@@ -85,7 +85,7 @@
     "projectOmschrijving": "Bouwen van nieuwbouwwoning",
     "architect": "Elfi Eerdekens",
     "heeftUitvoeringsplannen": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
     "id": "VILLADOUR",
@@ -95,17 +95,17 @@
     "architect": "Normarchitectuur",
     "aannemer": "Bouwbedrijf Bloemen",
     "heeftUitvoeringsplannen": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
-    "id": "CANNUS FIELD",
+    "id": "CANNUS_FIELD",
     "projectNaam": "Cannus field",
     "projectOmschrijving": "Bouwen van nieuwbouwvilla",
     "architect": "GDesign architecten",
     "aannemer": "Benny Vrijsen",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
     "id": "CHATOU",
@@ -116,16 +116,16 @@
     "aannemer": "Gebroeders Caelen",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
-    "id": "DE BRON SCHOOL",
+    "id": "DE_BRON_SCHOOL",
     "projectNaam": "De bron school",
     "projectOmschrijving": "Bouwen van school met fietsenstalling en overdekte speelplaats",
     "architect": "Q-BUS architecten",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
     "id": "HEMELIJN",
@@ -136,17 +136,17 @@
     "aannemer": "Gebroeders Caelen",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
-    "id": "HENNISSTRAAT",
-    "projectNaam": "Hennisstraat",
+    "id": "HENISSTRAAT",
+    "projectNaam": "Henisstraat",
     "projectOmschrijving": "Bouwen van 11 appartementen met ondergrondse parking",
     "bouwheer": "JDP-bouw",
     "architect": "D&D architecten",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
     "id": "JBK",
@@ -156,7 +156,7 @@
     "architect": "BURO B",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": true
+    "heeftRender": true
   },
   {
     "id": "COOPMANS",
@@ -166,7 +166,7 @@
     "heeftVoorstudie": true,
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
     "id": "DONGHI",
@@ -176,7 +176,7 @@
     "heeftVoorstudie": true,
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
     "id": "ESDREEF",
@@ -185,7 +185,7 @@
     "architect": "Eiland 7",
     "heeftVoorstudie": true,
     "heeftUitvoeringsplannen": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
     "id": "FEYTONGS",
@@ -194,7 +194,7 @@
     "architect": "Irma Architecten",
     "heeftVoorstudie": true,
     "heeftUitvoeringsplannen": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
     "id": "GELEYNS",
@@ -204,7 +204,7 @@
     "heeftVoorstudie": true,
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
     "id": "KAPELSTRAAT",
@@ -213,7 +213,7 @@
     "architect": "Eiland 7",
     "heeftVoorstudie": true,
     "heeftUitvoeringsplannen": true,
-    "heeftFotos": false
+    "heeftRender": false
   },
   {
     "id": "PAUWELYN",
@@ -222,10 +222,10 @@
     "architect": "Eiland 7",
     "heeftVoorstudie": true,
     "heeftUitvoeringsplannen": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
-    "id": "BERGENSTRAAT",
+    "id": "BERGSTRAAT",
     "projectNaam": "Bergenstraat",
     "projectOmschrijving": "Bouwen van 2 halfopen nieuwbouwwoningen",
     "bouwheer": "Cleren Dirk",
@@ -233,7 +233,7 @@
     "heeftVoorstudie": true,
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
     "id": "KERKHOFS",
@@ -241,7 +241,7 @@
     "projectOmschrijving": "Bouwen van nieuwbouwvilla",
     "architect": "Grosemans-Heylen",
     "aannemer": "Benny Vrijsen",
-    "heeftFotos": false
+    "heeftRender": false
   },
   {
     "id": "VERMIJL",
@@ -249,17 +249,17 @@
     "projectOmschrijving": "Bouwen van nieuwbouwwoning",
     "architect": "LINO-ARCHITECTEN",
     "aannemer": "Benny Vrijsen",
-    "heeftFotos": false
+    "heeftRender": false
   },
   {
     "id": "WINTMOLDERS",
     "projectNaam": "WINTMOLDERS",
     "projectOmschrijving": "Bouwen van nieuwbouwvilla met kangoeroewoning",
     "architect": "Grosemans-Heylen",
-    "aannemer": "Benny Vrijsen ",
+    "aannemer": "Benny Vrijsen",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": false
+    "heeftRender": false
   },
   {
     "id": "BEUKENLAAN",
@@ -267,7 +267,7 @@
     "projectOmschrijving": "Bouwen van nieuwbouwwoning",
     "architect": "Eiland 7",
     "heeftUitvoeringsplannen": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
     "id": "BEULS",
@@ -275,7 +275,7 @@
     "projectOmschrijving": "Bouwen van nieuwbouwvilla",
     "architect": "ILB",
     "heeftUitvoeringsplannen": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
     "id": "BEVERPARK",
@@ -286,7 +286,7 @@
     "aannemer": "Bouwonderneming Haex",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
     "id": "BEVINGEN",
@@ -296,7 +296,7 @@
     "architect": "Grosemans-Heylen",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
     "id": "BLOMME",
@@ -304,16 +304,16 @@
     "projectOmschrijving": "Bouwen van nieuwbouwvilla",
     "architect": "Ines Verhaegen",
     "heeftUitvoeringsplannen": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
-    "id": "DUO WONING",
+    "id": "DUO_WONING",
     "projectNaam": "Duo woning",
     "projectOmschrijving": "Bouwen van een meergezinswoning met (2 woonheden)",
     "bouwheer": "MV projecten",
     "architect": "Eva Dooms",
     "heeftUitvoeringsplannen": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
     "id": "STEENAKKER",
@@ -322,15 +322,15 @@
     "architect": "Gerlinde Thys",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
-    "id": "VAN DRIESSCHE",
+    "id": "VAN_DRIESSCHE",
     "projectNaam": "Van Driessche",
     "projectOmschrijving": "Bouwen van nieuwbouwwoning",
     "architect": "Architectenbureau Burg Vaes",
     "heeftUitvoeringsplannen": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
     "id": "ERMAR",
@@ -340,10 +340,10 @@
     "architect": "Bijnens Kellend architecten",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": false
+    "heeftRender": true
   },
   {
-    "id": "OPUS 2",
+    "id": "OPUS_2",
     "projectNaam": "Opus park",
     "projectOmschrijving": "Bouwen van 3 appartementsblokken met een gemeenschappelijke ondergrondse kelder (2 kantoren en 34 luxeappartementen)",
     "bouwheer": "Glaudis projects",
@@ -351,6 +351,6 @@
     "aannemer": "Gebroeders Caelen",
     "heeftUitvoeringsplannen": true,
     "heeftWerfopvolging": true,
-    "heeftFotos": true
+    "heeftRender": true
   }
 ]
