@@ -3,11 +3,12 @@ import { NavigationHeader } from './components/NavigationHeader';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import { Landing } from './pages/Landing';
 import { Services } from './pages/Services';
-import { Footer } from './components/Landing/Footer';
+import { Footer } from '@/components/Landing/Footer';
 import { useState } from 'react';
 import { Portfolio } from './pages/Portfolio';
 import { AboutUs } from './pages/AboutUs';
 import { Contact } from './pages/Contact';
+import { Toaster } from '@/components/ui/sonner';
 
 const AppLayout = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -17,6 +18,7 @@ const AppLayout = () => {
       <NavigationHeader navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
       <Outlet />
       <Footer />
+      <Toaster />
     </>
   );
 };
