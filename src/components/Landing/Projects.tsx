@@ -16,8 +16,8 @@ export function Projects() {
         <p className="md:w-[45%] text-md text-gray-100 font-light opacity-90 mt-1">Het soort bouw projecten waarin wij specialiseren, omvatten particulieren en kleine bouwpromotoren.</p>
       </div>
       <div className="flex flex-row justify-between items-center gap-4">
-        <p className="text-md text-gray-100 text-nowrap">Onze projecten</p>
-        <div className="w-full h-[1px] bg-white opacity-20"></div>
+        <p className="text-md text-gray-100 sm:text-nowrap">Projecten uit vorige werkervaring</p>
+        <div className="w-full h-[1px] bg-white opacity-20 hidden sm:block"></div>
         <div className="flex flex-row gap-4">
           <button
             aria-label="toon vorig project"

@@ -3,40 +3,40 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { z } from 'zod';
-import render from '../assets/RENDER-300x200.webp';
+import render from '../assets/contact_image.webp';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from '@/components/ui/form';
-import { Checkbox } from '@/components/ui/checkbox';
 import background from '../assets/contact.webp';
+import emailjs from '@emailjs/browser';
 
 export function Contact() {
-  const draagvloeren = [
-    {
-      id: 'welfsels',
-      label: 'Welfsels'
-    },
-    {
-      id: 'predallen',
-      label: 'Predallen'
-    },
-    {
-      id: 'pottenEnBalken',
-      label: 'Potten en balken'
-    },
-    {
-      id: 'traditioneleBetonvloer',
-      label: 'Traditionele betonvloer'
-    },
-    {
-      id: 'hout',
-      label: 'Hout'
-    },
-    {
-      id: 'vrijeKeuze',
-      label: 'Vrije keuze'
-    }
-  ] as const;
+  // const draagvloeren = [
+  //   {
+  //     id: 'welfsels',
+  //     label: 'Welfsels'
+  //   },
+  //   {
+  //     id: 'predallen',
+  //     label: 'Predallen'
+  //   },
+  //   {
+  //     id: 'pottenEnBalken',
+  //     label: 'Potten en balken'
+  //   },
+  //   {
+  //     id: 'traditioneleBetonvloer',
+  //     label: 'Traditionele betonvloer'
+  //   },
+  //   {
+  //     id: 'hout',
+  //     label: 'Hout'
+  //   },
+  //   {
+  //     id: 'vrijeKeuze',
+  //     label: 'Vrije keuze'
+  //   }
+  // ] as const;
 
   const ContactSchema = z.object({
     voornaam: z.string({
@@ -68,58 +68,76 @@ export function Contact() {
     stad: z.string(),
     typeProject: z.string(),
     korteBeschrijving: z.string(),
-    ruimtes: z.string(),
-    stapelingDraagmuren: z.string(),
-    maximaleUitkraging: z.number(),
-    typeFundering: z.string(),
-    kelder: z.string(),
-    draagvloeren: z.array(z.string()),
-    typeDak: z.string(),
-    overigeOpmerkingen: z.string()
+    bestanden: z.instanceof(FileList)
+    // ruimtes: z.string(),
+    // stapelingDraagmuren: z.string(),
+    // maximaleUitkraging: z.number(),
+    // typeFundering: z.string(),
+    // kelder: z.string(),
+    // draagvloeren: z.array(z.string()),
+    // typeDak: z.string(),
+    // overigeOpmerkingen: z.string()
   });
 
   const contactForm = useForm<z.infer<typeof ContactSchema>>({
     resolver: zodResolver(ContactSchema),
     defaultValues: {
-      voornaam: undefined,
-      achternaam: undefined,
-      email: undefined,
-      telefoonnummer: undefined,
-      onderwerp: undefined,
-      bericht: undefined
+      voornaam: '',
+      achternaam: '',
+      email: '',
+      telefoonnummer: '',
+      onderwerp: '',
+      bericht: ''
     }
   });
 
   const offerteForm = useForm<z.infer<typeof OfferteSchema>>({
     resolver: zodResolver(OfferteSchema),
     defaultValues: {
-      voornaam: undefined,
-      achternaam: undefined,
-      email: undefined,
-      telefoonnummer: undefined,
-      straat: undefined,
-      huisnummer: undefined,
-      postcode: undefined,
-      stad: undefined,
-      typeProject: undefined,
-      korteBeschrijving: undefined,
-      ruimtes: undefined,
-      stapelingDraagmuren: undefined,
-      maximaleUitkraging: undefined,
-      typeFundering: undefined,
-      kelder: undefined,
-      draagvloeren: [],
-      typeDak: undefined,
-      overigeOpmerkingen: ''
+      voornaam: '',
+      achternaam: '',
+      email: '',
+      telefoonnummer: '',
+      straat: '',
+      huisnummer: '',
+      postcode: '',
+      stad: '',
+      typeProject: '',
+      korteBeschrijving: '',
+      bestanden: undefined
+      // ruimtes: undefined,
+      // stapelingDraagmuren: undefined,
+      // maximaleUitkraging: undefined,
+      // typeFundering: undefined,
+      // kelder: undefined,
+      // draagvloeren: [],
+      // typeDak: undefined,
+      // overigeOpmerkingen: ''
     }
   });
+  // const bestandenRef = offerteForm.register('bestanden');
 
-  function onContactSubmit(data: z.infer<typeof ContactSchema>) {
-    console.log(data);
+  async function onContactSubmit(data: z.infer<typeof ContactSchema>) {
+    emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_KEY, import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_KEY, data).then(
+      (response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      },
+      (error) => {
+        console.log('FAILED...', error);
+      }
+    );
   }
 
   function onOfferteSubmit(data: z.infer<typeof OfferteSchema>) {
-    console.log(data);
+    // data.bestanden = [...Array(data.bestanden.length).keys()].map((index) => data.bestanden.item(index)?.name).join('\\n') as never;
+    emailjs.send(import.meta.env.VITE_EMAILJS_SERVICE_KEY, import.meta.env.VITE_EMAILJS_OFFERTE_TEMPLATE_KEY, data).then(
+      (response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      },
+      (error) => {
+        console.log('FAILED...', error);
+      }
+    );
   }
 
   return (
@@ -384,6 +402,19 @@ export function Contact() {
                     </FormItem>
                   )}
                 />
+                {/* <FormField
+                  control={offerteForm.control}
+                  name="bestanden"
+                  render={() => (
+                    <FormItem>
+                      <FormLabel>File</FormLabel>
+                      <FormControl>
+                        <Input type="file" placeholder="Geen bestanden" {...bestandenRef} multiple />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
                 <FormField
                   control={offerteForm.control}
                   name="ruimtes"
@@ -553,7 +584,7 @@ export function Contact() {
                       <FormMessage />
                     </FormItem>
                   )}
-                />
+                /> */}
                 <button
                   aria-label="verzend offerte formulier"
                   className="w-1/3 flex justify-center mt-2 bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 px-5 rounded-full items-center text-sm md:text-md font-semibold uppercase"

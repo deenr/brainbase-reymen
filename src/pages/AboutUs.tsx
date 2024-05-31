@@ -1,5 +1,6 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import background from '../assets/over-ons.webp';
+import portfolio from '../assets/profielfoto.webp';
 
 export function AboutUs() {
   return (
@@ -20,12 +21,7 @@ export function AboutUs() {
               Mijn naam is Dylan Reymen, oprichter van BRAINbase Reymen, en mijn doel is om onze klanten — voornamelijk particulieren en kleine bouwpromotoren — van dienst te zijn met op maat gemaakte
               stabiliteitsstudies die de integriteit en esthetiek van hun projecten garanderen.
             </p>
-            <div
-              className="h-64 bg-gray-400 mt-6 bg-cover bg-center "
-              style={{
-                backgroundImage: 'url(\'https://rogierbos.com/wp-content/uploads/2019/03/Bouw-Fotograaf-Portret-van-een-werkvoorbereider.jpg\')'
-              }}
-            ></div>
+            <img className="h-64 bg-gray-400 mt-6 object-cover object-center " src={portfolio} alt="Foto van Dylan Reymen"></img>
           </div>
           <div className="flex-1 flex flex-col md:flex-col-reverse gap-6 justify-end	">
             <div className="flex flex-col gap-2">

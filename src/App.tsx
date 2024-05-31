@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import { NavigationHeader } from './components/NavigationHeader';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import { Landing } from './pages/Landing';
@@ -55,5 +56,13 @@ export const router = createBrowserRouter([
 ]);
 
 export function App() {
+  emailjs.init({
+    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+    blockHeadless: true,
+    limitRate: {
+      id: 'app',
+      throttle: 10000
+    }
+  });
   return <RouterProvider router={router} />;
 }
