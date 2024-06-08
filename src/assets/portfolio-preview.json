@@ -1,0 +1,49 @@
+[
+  {
+    "id": "KEMPENHOF",
+    "projectNaam": "Kempenhuf",
+    "projectOmschrijving": "Bouwen van 10 appartementen met ondergronde parking",
+    "bouwheer": "Luc Colla",
+    "architect": "D&D architecten",
+    "heeftVoorstudie": true,
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftRender": true
+  },
+  {
+    "id": "BRUGSTRAAT",
+    "projectNaam": "Brugstraat",
+    "projectOmschrijving": "Bouwen van 12 appartementen met ondergrondse parking",
+    "bouwheer": "Commercia Terra",
+    "architect": "D&D architecten",
+    "heeftUitvoeringsplannen": true,
+    "heeftWerfopvolging": true,
+    "heeftRender": true
+  },
+  {
+    "id": "MIELS",
+    "projectNaam": "MIELS",
+    "projectOmschrijving": "Bouwen van 9 luxe appartementen met ondergrondse parking",
+    "bouwheer": "Glaudis projects",
+    "architect": "Normarchitectuur",
+    "aannemer": "Bouwbedrijf Bloemen",
+    "heeftUitvoeringsplannen": true,
+    "heeftRender": true
+  },
+  {
+    "id": "VANDEWEYER",
+    "projectNaam": "Vandeweyer",
+    "projectOmschrijving": "Bouwen van nieuwbouwwoning",
+    "architect": "Elfi Eerdekens",
+    "heeftUitvoeringsplannen": true,
+    "heeftRender": true
+  },
+  {
+    "id": "BEULS",
+    "projectNaam": "Beuls",
+    "projectOmschrijving": "Bouwen van nieuwbouwvilla",
+    "architect": "ILB",
+    "heeftUitvoeringsplannen": true,
+    "heeftRender": true
+  }
+]
