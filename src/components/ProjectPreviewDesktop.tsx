@@ -29,7 +29,7 @@ export function ProjectPreviewDesktop({
         <div className="relative z-10 flex flex-col justify-end">
           <p className="text-base text-gray-100 font-light">{projectOmschrijving}</p>
         </div>
-        <div className="relative z-10 flex flex-col justify-between items-end">
+        {/* <div className="relative z-10 flex flex-col justify-between items-end">
           <div aria-label="open project details" className="bg-primair-500 w-fit text-white py-3 px-3 rounded-full flex items-center text-base">
             <svg className="w-[20px] h-[20px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path
@@ -40,14 +40,14 @@ export function ProjectPreviewDesktop({
               />
             </svg>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="relative z-10 hidden group-hover:block">
-        <div className="group-hover:grid grid-cols-2 gap-2 mb-3">
+        {/* <div className="group-hover:grid grid-cols-2 gap-2 mb-3">
           {bouwheer && <TitleDescription title="Bouwheer" description={bouwheer} />}
           {architect && <TitleDescription title="Architect" description={architect} />}
           {aannemer && <TitleDescription title="Aannemer" description={aannemer} />}
-        </div>
+        </div> */}
         {(heeftVoorstudie || heeftWerfopvolging || heeftUitvoeringsplannen) && (
           <div>
             <h3 className="text-lg font-semibold text-gray-100">Categorieën</h3>

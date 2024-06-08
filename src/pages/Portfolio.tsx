@@ -25,7 +25,7 @@ export function Portfolio() {
           .
         </p>
       </header>
-      <section className="grid gap-8 grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 pb-12 md:py-24 px-4 md:px-12 lg:px-28">
+      <section className="grid gap-8 grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 pt-8 pb-12 md:py-24 px-4 md:px-12 lg:px-28">
         {allProjects.map((project) => (
           <div key={project.id} className="w-full h-96">
             {isLg ? (

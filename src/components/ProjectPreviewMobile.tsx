@@ -46,11 +46,11 @@ export function ProjectPreviewMobile(
             backgroundImage: `url(${image})`
           }}
         />
-        <div className="grid grid-cols-2 gap-2">
+        {/* <div className="grid grid-cols-2 gap-2">
           {bouwheer && <TitleDescription title="Bouwheer" description={bouwheer} />}
           {architect && <TitleDescription title="Architect" description={architect} />}
           {aannemer && <TitleDescription title="Aannemer" description={aannemer} />}
-        </div>
+        </div> */}
         {(heeftVoorstudie || heeftWerfopvolging || heeftUitvoeringsplannen) && (
           <div>
             <h3 className="text-lg font-semibold">Categorieën</h3>
