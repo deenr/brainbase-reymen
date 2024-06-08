@@ -19,6 +19,18 @@ jobs:
       - name: Build
         run: npm run build # The build command of your project
 
+      - name: Create .htaccess file
+        run: |
+          echo '<IfModule mod_rewrite.c>' > dist/.htaccess
+          echo 'RewriteEngine On' >> dist/.htaccess
+          echo 'RewriteBase /subdirectory' >> dist/.htaccess
+          echo 'RewriteRule ^index\.html$ - [L]' >> dist/.htaccess
+          echo 'RewriteCond %{REQUEST_FILENAME} !-f' >> dist/.htaccess
+          echo 'RewriteCond %{REQUEST_FILENAME} !-d' >> dist/.htaccess
+          echo 'RewriteCond %{REQUEST_FILENAME} !-l' >> dist/.htaccess
+          echo 'RewriteRule . /index.html [L]' >> dist/.htaccess
+          echo '</IfModule>' >> dist/.htaccess
+
       - name: Push changes to another repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
