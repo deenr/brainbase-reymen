@@ -81,8 +81,8 @@ export function Contact() {
     postcode: z.string().min(1, 'Gelieve de postcode van het project in te vullen'),
     stad: z.string().min(1, 'Gelieve de stad van het project in te vullen'),
     typeProject: z.string().min(1, 'Gelieve het type project te selecteren'),
-    korteBeschrijving: z.string(),
-    bestanden: z.instanceof(FileList)
+    korteBeschrijving: z.string()
+    // bestanden: z.instanceof(FileList)
     // ruimtes: z.string(),
     // stapelingDraagmuren: z.string(),
     // maximaleUitkraging: z.number(),
@@ -117,8 +117,8 @@ export function Contact() {
       postcode: '',
       stad: '',
       typeProject: '',
-      korteBeschrijving: '',
-      bestanden: undefined
+      korteBeschrijving: ''
+      // bestanden: undefined
       // ruimtes: undefined,
       // stapelingDraagmuren: undefined,
       // maximaleUitkraging: undefined,
@@ -136,15 +136,16 @@ export function Contact() {
     emailjs
       .send(import.meta.env.VITE_EMAILJS_SERVICE_KEY, import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_KEY, data)
       .then(
-        (response) => {
+        () => {
           contactForm.reset();
           toast('U heeft succesvol contact opgenomen', {
             description: 'Ik zal uw vraag zo snel mogelijk beantwoorden!'
           });
-          console.log('SUCCESS!', response.status, response.text);
         },
         (error) => {
-          console.log('FAILED...', error);
+          toast('Uw vraag is niet verstuurd, probeer het opnieuw', {
+            description: error
+          });
         }
       )
       .finally(() => setSendingEmail(false));
@@ -156,15 +157,16 @@ export function Contact() {
     emailjs
       .send(import.meta.env.VITE_EMAILJS_SERVICE_KEY, import.meta.env.VITE_EMAILJS_OFFERTE_TEMPLATE_KEY, data)
       .then(
-        (response) => {
+        () => {
           offerteForm.reset();
           toast('Uw offerte is succesvol verstuurd', {
             description: 'Ik zal uw offerte zo snel mogelijk behandelen!'
           });
-          console.log('SUCCESS!', response.status, response.text);
         },
         (error) => {
-          console.log('FAILED...', error);
+          toast('Uw offerte is niet verstuurd, probeer het opnieuw', {
+            description: error
+          });
         }
       )
       .finally(() => setSendingEmail(false));

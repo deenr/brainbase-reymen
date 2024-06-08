@@ -7,12 +7,8 @@ import background from '../assets/portfolio.webp';
 import { useState } from 'react';
 
 export function Portfolio() {
-  console.log(portfolio);
   const [allProjects] = useState<Project[]>((portfolio as Project[]).filter((project) => project.heeftRender));
   const { isLg } = useBreakpoint('lg');
-  console.log(allProjects);
-
-  console.log(isLg);
 
   return (
     <>
