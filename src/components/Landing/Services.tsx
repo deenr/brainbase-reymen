@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import structuralImage from '../../assets/home1.webp';
+import designImage from '../../assets/home2.webp';
 
 export function Services() {
   return (
@@ -12,7 +14,7 @@ export function Services() {
           <Link to={'diensten'}>
             <button
               aria-label="bekijk diensten"
-              className="flex h-fit bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 px-5 rounded-full items-center text-md text-nowrap font-semibold uppercase"
+              className="flex h-fit bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 px-5 rounded-full items-center text-base text-nowrap font-semibold uppercase"
             >
               Bekijk diensten
               <svg className="w-[20px] h-[20px] ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -27,13 +29,7 @@ export function Services() {
         <div className="flex flex-col">
           <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">Structurele analyse</h2>
           <p className="text-base text-gray-500 mt-2">Elk ontwerp wordt onder de loep genomen om zekerheid te bieden over veiligheid en duurzaamheid, zonder afbreuk te doen aan esthetiek.</p>
-          <div
-            className="h-64 bg-gray-400 mt-6 bg-cover bg-center"
-            style={{
-              backgroundImage:
-                "url('https://media.licdn.com/dms/image/C4E12AQHlj0h9lzmoWw/article-cover_image-shrink_720_1280/0/1520080032401?e=2147483647&v=beta&t=DUHcnTR4qNgxJKjp3n2wTCdMlrqk7-JIuYwEeckvRNo')"
-            }}
-          ></div>
+          <img className="h-64 bg-gray-400 mt-6 object-cover object-center" src={structuralImage} />
         </div>
         <div className="flex flex-col md:flex-col-reverse gap-6 justify-end	">
           <div className="flex flex-col gap-2">
@@ -42,12 +38,7 @@ export function Services() {
               Wij vertalen uw dromen in concrete plannen, met voortdurende dialoog om te zorgen dat het eindresultaat uw oorspronkelijke visie weerspiegelt en zelfs versterkt.
             </p>
           </div>
-          <div
-            className="h-64 bg-gray-400 bg-cover bg-center"
-            style={{
-              backgroundImage: "url('https://www.architect-feitjes.nl/wp-content/uploads/2023/11/huis-ontwerp-img.jpg')"
-            }}
-          ></div>
+          <img className="h-64 bg-gray-400 object-cover object-center" src={designImage} />
         </div>
       </div>
     </section>

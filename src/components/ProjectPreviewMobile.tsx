@@ -28,7 +28,7 @@ export function ProjectPreviewMobile(
             <p className="text-base text-gray-100 font-light">{projectOmschrijving}</p>
           </div>
           <div className="relative z-10 flex flex-col justify-between items-end">
-            <div aria-label="open project details" className="bg-primair-500 w-fit text-white font-bold py-3 px-3 rounded-full flex items-center text-md font-semibold	 ">
+            <div aria-label="open project details" className="bg-primair-500 w-fit text-white font-bold py-3 px-3 rounded-full flex items-center text-base font-semibold	 ">
               <svg className="w-[20px] h-[20px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7.05033 16.9497L16.9498 7.05025M16.9498 7.05025H7.05033M16.9498 7.05025V16.9497" />
               </svg>

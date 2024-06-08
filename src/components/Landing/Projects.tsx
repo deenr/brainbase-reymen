@@ -13,15 +13,15 @@ export function Projects() {
     <section className="relative flex flex-col gap-8 md:gap-12 py-16 md:py-24 bg-primair-500 px-4 md:px-12 lg:px-28">
       <div className="flex flex-col gap-4 md:gap-16 md:flex-row">
         <h3 className="md:w-[55%] text-2xl font-semibold text-gray-100 md:text-3xl">Bouwen aan de mijlpalen van morgen met deskundige precisie</h3>
-        <p className="md:w-[45%] text-md text-gray-100 font-light opacity-90 mt-1">Het soort bouw projecten waarin wij specialiseren, omvatten particulieren en kleine bouwpromotoren.</p>
+        <p className="md:w-[45%] text-base text-gray-100 font-light opacity-90 mt-1">Het soort bouw projecten waarin wij specialiseren, omvatten particulieren en kleine bouwpromotoren.</p>
       </div>
       <div className="flex flex-row justify-between items-center gap-4">
-        <p className="text-md text-gray-100 sm:text-nowrap">Projecten uit vorige werkervaring</p>
+        <p className="text-base text-gray-100 sm:text-nowrap">Projecten uit vorige werkervaring</p>
         <div className="w-full h-[1px] bg-white opacity-20 hidden sm:block"></div>
         <div className="flex flex-row gap-4">
           <button
             aria-label="toon vorig project"
-            className="border-[1px] border-white hover:bg-white text-white hover:text-black font-bold py-3 px-5 rounded-full flex items-center text-md font-semibold"
+            className="border-[1px] border-white hover:bg-white text-white hover:text-black font-bold py-3 px-5 rounded-full flex items-center text-base font-semibold"
             onClick={() =>
               setProjects((prevProjects) => {
                 if (prevProjects.length > 0) {
@@ -40,7 +40,7 @@ export function Projects() {
           </button>
           <button
             aria-label="toon volgend project"
-            className="border-[1px] border-white hover:bg-white text-white hover:text-black font-bold py-3 px-5 rounded-full flex items-center text-md font-semibold"
+            className="border-[1px] border-white hover:bg-white text-white hover:text-black font-bold py-3 px-5 rounded-full flex items-center text-base font-semibold"
             onClick={() =>
               setProjects((prevProjects) => {
                 if (prevProjects.length > 0) {

@@ -178,7 +178,7 @@ export function Contact() {
           <h1 className="text-3xl font-bold text-primair-500 md:text-5xl uppercase text-nowrap">Contact</h1>
           <div className="w-full h-1 bg-primair-500"> </div>
         </div>
-        <p className="relative z-10 max-w-xl text-md text-gray-500">Heeft u vragen of wilt u meer informatie? Neem contact met ons op via het gepaste formulier.</p>
+        <p className="relative z-10 max-w-xl text-base text-gray-500">Heeft u vragen of wilt u meer informatie? Neem contact met ons op via het gepaste formulier.</p>
       </header>
       <section className="flex flex-col md:flex-row gap-8 py-12 md:py-24 md:pt-20 px-4 md:px-12 lg:px-28">
         <Tabs defaultValue="general" className="w-full">
@@ -275,7 +275,7 @@ export function Contact() {
                 />
                 <button
                   aria-label="verzend offerte formulier"
-                  className="sm:w-1/3 flex justify-center mt-2 bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 pl-4 pr-5 rounded-full items-center text-sm md:text-md font-semibold uppercase"
+                  className="sm:w-1/3 flex justify-center mt-2 bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 pl-4 pr-5 rounded-full items-center text-sm md:text-base font-semibold uppercase"
                   type="submit"
                 >
                   {isSendingEmail && <LoadingSpinner className="mr-2 min-w-[20px] min-h-[20px]" />}
@@ -617,7 +617,7 @@ export function Contact() {
                 /> */}
                 <button
                   aria-label="verzend offerte formulier"
-                  className="sm:w-1/3 flex justify-center mt-2 bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 pl-4 pr-5 rounded-full items-center text-sm md:text-md font-semibold uppercase"
+                  className="sm:w-1/3 flex justify-center mt-2 bg-primair-500 hover:bg-primair-600 text-white font-bold py-3 pl-4 pr-5 rounded-full items-center text-sm md:text-base font-semibold uppercase"
                   type="submit"
                 >
                   {isSendingEmail && <LoadingSpinner className="mr-2 min-w-[20px] min-h-[20px]" />}

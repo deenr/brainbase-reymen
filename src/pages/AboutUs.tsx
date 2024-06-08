@@ -11,7 +11,7 @@ export function AboutUs() {
           <h1 className="text-3xl font-bold text-primair-500 md:text-5xl uppercase text-nowrap">Over ons</h1>
           <div className="w-full h-1 bg-primair-500"> </div>
         </div>
-        <p className="relative z-10 max-w-xl text-md text-gray-500">Mijn missie is het leveren van op maat gemaakte stabiliteitsstudies voor particulieren en kleine bouwpromotoren.</p>
+        <p className="relative z-10 max-w-xl text-base text-gray-500">Mijn missie is het leveren van op maat gemaakte stabiliteitsstudies voor particulieren en kleine bouwpromotoren.</p>
       </header>
       <section className="flex flex-col gap-6 py-12 md:py-24 md:pt-20 px-4 md:px-12 lg:px-28">
         <div className="flex flex-col md:flex-row md:flex-row gap-4 md:gap-8 md:gap-16">

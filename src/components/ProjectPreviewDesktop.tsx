@@ -30,7 +30,7 @@ export function ProjectPreviewDesktop({
           <p className="text-base text-gray-100 font-light">{projectOmschrijving}</p>
         </div>
         <div className="relative z-10 flex flex-col justify-between items-end">
-          <div aria-label="open project details" className="bg-primair-500 w-fit text-white py-3 px-3 rounded-full flex items-center text-md">
+          <div aria-label="open project details" className="bg-primair-500 w-fit text-white py-3 px-3 rounded-full flex items-center text-base">
             <svg className="w-[20px] h-[20px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path
                 strokeLinecap="round"

@@ -17,7 +17,7 @@ export function Portfolio() {
           <h1 className="text-3xl font-bold text-primair-500 md:text-5xl uppercase">Portfolio</h1>
           <div className="w-full h-1 bg-primair-500"> </div>
         </div>
-        <p className="relative z-10 max-w-xl text-md text-gray-500">
+        <p className="relative z-10 max-w-xl text-base text-gray-500">
           Verken mijn diversiteit aan villa's, huizen en appartementen, elk met unieke stabiliteitsstudies. Deze projecten zijn onderdeel van mijn werkervaring als stabiliteitsingenieur bij{' '}
           <a className="underline" href="https://momenting.be/" target="_blank" rel="noopener noreferrer">
             MoMENTING BV

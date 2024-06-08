@@ -16,16 +16,16 @@ export function NavigationHeader(
         </Link>
         <nav className="hidden md:block">
           <div className="flex flex-row gap-8">
-            <NavLink className={({ isActive }) => (isActive ? 'text-md font-semibold uppercase text-gray-600' : 'text-md font-semibold uppercase text-gray-400')} to={'/'}>
+            <NavLink className={({ isActive }) => (isActive ? 'text-base font-semibold uppercase text-gray-600' : 'text-base font-semibold uppercase text-gray-400')} to={'/'}>
               Home
             </NavLink>
-            <NavLink className={({ isActive }) => (isActive ? 'text-md font-semibold uppercase text-gray-600' : 'text-md font-semibold uppercase text-gray-400')} to={'diensten'}>
+            <NavLink className={({ isActive }) => (isActive ? 'text-base font-semibold uppercase text-gray-600' : 'text-base font-semibold uppercase text-gray-400')} to={'diensten'}>
               Diensten
             </NavLink>
-            <NavLink className={({ isActive }) => (isActive ? 'text-md font-semibold uppercase text-gray-600' : 'text-md font-semibold uppercase text-gray-400')} to={'portfolio'}>
+            <NavLink className={({ isActive }) => (isActive ? 'text-base font-semibold uppercase text-gray-600' : 'text-base font-semibold uppercase text-gray-400')} to={'portfolio'}>
               Portfolio
             </NavLink>
-            <NavLink className={({ isActive }) => (isActive ? 'text-md font-semibold uppercase text-gray-600' : 'text-md font-semibold uppercase text-gray-400')} to={'over-ons'}>
+            <NavLink className={({ isActive }) => (isActive ? 'text-base font-semibold uppercase text-gray-600' : 'text-base font-semibold uppercase text-gray-400')} to={'over-ons'}>
               Over ons
             </NavLink>
           </div>
@@ -33,7 +33,7 @@ export function NavigationHeader(
         <Link to={'/contact'}>
           <button
             aria-label="contacteer ons"
-            className="flex bg-primair-500 hover:bg-primair-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-md font-semibold uppercase"
+            className="flex bg-primair-500 hover:bg-primair-600 text-white font-bold py-2 px-3 md:py-3 md:px-5 rounded-full items-center text-sm md:text-base font-semibold uppercase"
           >
             Contacteer ons
             <svg className="w-[20px] h-[20px] ml-2 hidden lg:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
