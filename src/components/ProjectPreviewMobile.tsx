@@ -12,7 +12,7 @@ export function ProjectPreviewMobile(
     heeftWerfopvolging?: boolean;
   }>
 ) {
-  const { projectOmschrijving, image, bouwheer, architect, aannemer, heeftVoorstudie, heeftUitvoeringsplannen, heeftWerfopvolging } = props;
+  const { projectOmschrijving, image, heeftVoorstudie, heeftUitvoeringsplannen, heeftWerfopvolging } = props;
 
   return (
     <Dialog>
@@ -120,20 +120,5 @@ export function ProjectPreviewMobile(
         )}
       </DialogContent>
     </Dialog>
-  );
-}
-
-function TitleDescription({
-  title,
-  description
-}: Readonly<{
-  title: string;
-  description: string;
-}>) {
-  return (
-    <div>
-      <h3 className="text-lg font-semibold">{title}</h3>
-      <p className="text-sm text-muted-foreground">{description}</p>
-    </div>
   );
 }

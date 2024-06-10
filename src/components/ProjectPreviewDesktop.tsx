@@ -1,9 +1,6 @@
 export function ProjectPreviewDesktop({
   projectOmschrijving,
   image,
-  bouwheer,
-  architect,
-  aannemer,
   heeftVoorstudie,
   heeftUitvoeringsplannen,
   heeftWerfopvolging
@@ -117,20 +114,5 @@ export function ProjectPreviewDesktop({
         )}
       </div>
     </picture>
-  );
-}
-
-function TitleDescription({
-  title,
-  description
-}: Readonly<{
-  title: string;
-  description: string;
-}>) {
-  return (
-    <div>
-      <h3 className="text-lg font-semibold text-gray-100">{title}</h3>
-      <p className="text-sm text-gray-100 opacity-70">{description}</p>
-    </div>
   );
 }
