@@ -16,13 +16,13 @@ const AppLayout = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <>
+    <div className={`${navbarOpen ? 'h-screen overflow-hidden' : ''}`}>
       <NavigationHeader navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
       <Outlet />
       <Footer />
       <Toaster />
       <ScrollToTop />
-    </>
+    </div>
   );
 };
 
