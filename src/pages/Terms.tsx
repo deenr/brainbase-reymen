@@ -1,10 +1,7 @@
-import background from '../assets/diensten.webp';
-
 export function Terms() {
   return (
     <>
-      <header className="relative flex flex-col md:flex-row gap-5 md:gap-32 justify-between md:items-center bg-gray-100 py-8 md:py-24 px-4 md:px-12 lg:px-28">
-        <img className="absolute z-0 opacity-30 inset-0 w-full h-full object-cover grayscale" src={background} alt="Gebruiksvoorwaarden achtergrond" />
+      <header className="relative flex flex-col md:flex-row gap-5 md:gap-32 justify-between md:items-center bg-gray-200 py-8 md:py-24 px-4 md:px-12 lg:px-28">
         <div className="relative z-10 w-fit flex flex-col gap-4">
           <h1 className="text-3xl font-bold text-primair-500 md:text-5xl uppercase">Terms of use</h1>
           <div className="w-full h-1 bg-primair-500"> </div>
