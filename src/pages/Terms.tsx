@@ -48,7 +48,13 @@ export function Terms() {
         </div>
         <div>
           <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">6. Persoonlijke Informatie</h2>
-          <p className="text-base text-gray-900 mt-2">Het indienen van persoonlijke informatie via de website wordt beheerst door ons Privacybeleid.</p>
+          <p className="text-base text-gray-900 mt-2">
+            Het indienen van persoonlijke informatie via de website wordt beheerst door ons
+            <a className="underline" href="/privacy">
+              Privacybeleid
+            </a>
+            .
+          </p>
         </div>
         <div>
           <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">7. Verboden Gebruik</h2>
