@@ -12,46 +12,46 @@ export function Terms() {
       </header>
       <section className="flex flex-col gap-6 py-12 md:py-24 md:pt-20 px-4 md:px-12 lg:px-28">
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">1. Algemene Voorwaarden</h2>
+          <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">1. Algemene Voorwaarden</h2>
           <p className="text-base text-gray-900 mt-2">
             Door akkoord te gaan met deze gebruiksvoorwaarden, verklaart u dat u ten minste meerderjarig bent in uw woonplaats. U mag onze diensten niet gebruiken voor illegale of ongeoorloofde
             doeleinden.
           </p>
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">2. Nauwkeurigheid, Volledigheid en Tijdigheid van Informatie</h2>
+          <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">2. Nauwkeurigheid, Volledigheid en Tijdigheid van Informatie</h2>
           <p className="text-base text-gray-900 mt-2">
             Wij zijn niet verantwoordelijk als de informatie op deze site niet nauwkeurig, volledig of actueel is. De inhoud van deze site is alleen voor algemene informatiedoeleinden en mag niet
             worden gebruikt als de enige basis voor besluitvorming.
           </p>
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">3. Wijzigingen in de Dienst</h2>
+          <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">3. Wijzigingen in de Dienst</h2>
           <p className="text-base text-gray-900 mt-2">
             Wij behouden ons het recht voor om de Dienst (of een deel of inhoud daarvan) op elk moment te wijzigen of stop te zetten zonder kennisgeving. Wij zijn niet aansprakelijk voor enige
             wijziging, prijswijziging, opschorting of stopzetting van de Dienst.
           </p>
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">4. Auteursrechten en Intellectuele Eigendom</h2>
+          <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">4. Auteursrechten en Intellectuele Eigendom</h2>
           <p className="text-base text-gray-900 mt-2">
             De inhoud van deze website, inclusief maar niet beperkt tot tekst, grafische afbeeldingen, logo's, en software, is eigendom van BRAINbase Reymen of de respectieve eigenaars van het
             studiewerk en afbeeldingen en is beschermd door auteursrechten en andere intellectuele eigendomsrechten.
           </p>
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">5. Gebruikersreacties, Feedback en Andere Inzendingen</h2>
+          <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">5. Gebruikersreacties, Feedback en Andere Inzendingen</h2>
           <p className="text-base text-gray-900 mt-2">
             Indien u op ons verzoek specifieke inzendingen doet (bijvoorbeeld deelname aan wedstrijden) of zonder verzoek creatieve ideeën, suggesties, voorstellen, plannen of andere materialen
             stuurt, gaat u ermee akkoord dat wij deze mogen gebruiken, bewerken, kopiëren, publiceren, distribueren en anderszins gebruiken in welk medium dan ook, op elk moment, zonder beperking.
           </p>
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">6. Persoonlijke Informatie</h2>
+          <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">6. Persoonlijke Informatie</h2>
           <p className="text-base text-gray-900 mt-2">Het indienen van persoonlijke informatie via de website wordt beheerst door ons Privacybeleid.</p>
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">7. Verboden Gebruik</h2>
+          <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">7. Verboden Gebruik</h2>
           <p className="text-base text-gray-900 mt-2">
             U mag de site of de inhoud ervan niet gebruiken voor onwettige doeleinden, om anderen aan te zetten tot onwettige handelingen, om inbreuk te maken op intellectuele eigendomsrechten, om
             haatdragend, beledigend of discriminerend materiaal te verspreiden, om onjuiste of misleidende informatie te verstrekken, om virussen of schadelijke code over te brengen, of om de
@@ -59,20 +59,20 @@ export function Terms() {
           </p>
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">8. Beperking van Aansprakelijkheid</h2>
+          <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">8. Beperking van Aansprakelijkheid</h2>
           <p className="text-base text-gray-900 mt-2">
             Wij garanderen niet dat uw gebruik van onze dienst ononderbroken, tijdig, veilig of foutloos zal zijn. U stemt ermee in dat wij de dienst van tijd tot tijd voor onbepaalde tijd kunnen
             verwijderen of de dienst op elk moment kunnen annuleren zonder kennisgeving aan u.
           </p>
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">9. Toepasselijk Recht</h2>
+          <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">9. Toepasselijk Recht</h2>
           <p className="text-base text-gray-900 mt-2">
             Deze gebruiksvoorwaarden en alle afzonderlijke overeenkomsten waarbij wij u diensten verlenen, worden beheerst door en geïnterpreteerd in overeenstemming met de wetten van België.
           </p>
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">10. Wijzigingen aan de Gebruiksvoorwaarden</h2>
+          <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">10. Wijzigingen aan de Gebruiksvoorwaarden</h2>
           <p className="text-base text-gray-900 mt-2">
             U kunt de meest recente versie van de gebruiksvoorwaarden op elk moment op deze pagina bekijken. Wij behouden ons het recht voor om, naar eigen goeddunken, delen van deze
             gebruiksvoorwaarden te wijzigen, aan te passen of te vervangen door updates en wijzigingen op onze website te plaatsen. Het is uw verantwoordelijkheid om onze website periodiek te
@@ -80,7 +80,7 @@ export function Terms() {
           </p>
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">11. Contactinformatie</h2>
+          <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">11. Contactinformatie</h2>
           <p className="text-base text-gray-900 mt-2">
             Vragen over de gebruiksvoorwaarden kunnen worden gestuurd naar{' '}
             <a className="underline" href="mailto:info@brainbasereymen.com">
@@ -90,7 +90,7 @@ export function Terms() {
           </p>
         </div>
         <div>
-          <h2 className="text-xl font-semibold text-gray-900 md:text-2xl uppercase">12. Wijzigingen in deze Gebruiksvoorwaarden</h2>
+          <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">12. Wijzigingen in deze Gebruiksvoorwaarden</h2>
           <p className="text-base text-gray-900 mt-2">Wij behouden ons het recht voor om deze gebruiksvoorwaarden op elk moment te wijzigen. Laatste wijziging was op 06 juni 2024.</p>
         </div>
       </section>
