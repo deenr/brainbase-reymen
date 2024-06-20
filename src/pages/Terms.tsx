@@ -49,7 +49,7 @@ export function Terms() {
         <div>
           <h2 className="text-lg font-semibold text-gray-900 md:text-xl uppercase">6. Persoonlijke Informatie</h2>
           <p className="text-base text-gray-900 mt-2">
-            Het indienen van persoonlijke informatie via de website wordt beheerst door ons
+            Het indienen van persoonlijke informatie via de website wordt beheerst door ons{' '}
             <a className="underline" href="/privacy">
               Privacybeleid
             </a>
