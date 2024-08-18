@@ -3,7 +3,6 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { z } from 'zod';
-import render from '../assets/contact_image.webp';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from '@/components/ui/form';
@@ -629,9 +628,7 @@ export function Contact() {
             </Form>
           </TabsContent>
         </Tabs>
-        <div className="w-full hidden xl:block">
-          <img className="flex-1 object-cover object-center" src={render} alt="Een render van een van mijn projecten in mijn portfolio"></img>
-        </div>
+        <div className="w-full hidden xl:block">{/* <img className="flex-1 object-cover object-center" src={render} alt="Een render van een van mijn projecten in mijn portfolio"></img> */}</div>
       </section>
     </>
   );

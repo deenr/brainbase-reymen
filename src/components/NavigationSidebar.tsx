@@ -23,13 +23,13 @@ export function NavigationSidebar(
         >
           Diensten
         </NavLink>
-        <NavLink
+        {/* <NavLink
           className={({ isActive }) => (isActive ? 'text-lg font-semibold uppercase text-gray-600' : 'text-lg font-semibold uppercase text-gray-400')}
           to={'portfolio'}
           onClick={() => props.closeSidebar()}
         >
           Portfolio
-        </NavLink>
+        </NavLink> */}
         <NavLink
           className={({ isActive }) => (isActive ? 'text-lg font-semibold uppercase text-gray-600' : 'text-lg font-semibold uppercase text-gray-400')}
           to={'over-ons'}

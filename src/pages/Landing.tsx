@@ -1,5 +1,4 @@
 import { Hero } from '../components/Landing/Hero';
-import { Projects } from '../components/Landing/Projects';
 import { Services } from '../components/Landing/Services';
 
 export function Landing() {
@@ -7,7 +6,7 @@ export function Landing() {
     <>
       <Hero />
       <Services />
-      <Projects />
+      {/* <Projects /> */}
     </>
   );
 }

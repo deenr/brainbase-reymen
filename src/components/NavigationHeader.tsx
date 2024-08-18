@@ -25,12 +25,12 @@ export function NavigationHeader(
             >
               Diensten
             </NavLink>
-            <NavLink
+            {/* <NavLink
               className={({ isActive }) => (isActive ? 'text-base font-semibold text-nowrap uppercase text-gray-600' : 'text-base font-semibold text-nowrap uppercase text-gray-400')}
               to={'portfolio'}
             >
               Portfolio
-            </NavLink>
+            </NavLink> */}
             <NavLink
               className={({ isActive }) => (isActive ? 'text-base font-semibold text-nowrap uppercase text-gray-600' : 'text-base font-semibold text-nowrap uppercase text-gray-400')}
               to={'over-ons'}
